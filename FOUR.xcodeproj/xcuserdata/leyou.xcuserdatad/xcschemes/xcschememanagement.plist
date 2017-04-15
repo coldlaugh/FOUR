@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FOUR WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FOUR WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FOUR.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ADEFB0001EA2C2EE00A4D473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADEFB0191EA2C2EF00A4D473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADEFB0241EA2C2F000A4D473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADEFB02D1EA2C2F000A4D473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
