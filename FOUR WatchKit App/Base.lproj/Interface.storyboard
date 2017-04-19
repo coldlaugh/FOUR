@@ -9,28 +9,30 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Menu-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller title="Menu" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Nb7-o8-JcC">
+                        <button width="1" alignment="left" title="Start" id="UEy-DX-Tsn">
                             <connections>
-                                <action selector="sliderAction:" destination="AgC-eL-Hgc" id="NLh-6J-VPX"/>
+                                <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
                             </connections>
-                        </slider>
-                        <button width="1" alignment="left" title="Save" id="8B4-87-F7O">
+                        </button>
+                        <button width="1" alignment="left" title="Add Answer" id="3Pv-Sr-GCm">
                             <connections>
-                                <action selector="saveAction:" destination="AgC-eL-Hgc" id="DCF-eF-fXv"/>
+                                <segue destination="oaH-pG-yKb" kind="push" id="3xL-5e-91a"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Statistics" id="pgB-2e-HMX">
+                            <connections>
+                                <segue destination="UvJ-OL-11N" kind="push" id="2vz-9J-Sow"/>
                             </connections>
                         </button>
                     </items>
-                    <connections>
-                        <outlet property="slider1" destination="Nb7-o8-JcC" id="rOs-Yw-AIG"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="348"/>
+            <point key="canvasLocation" x="220" y="362"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -46,14 +48,42 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="-27" y="1380"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="lOH-2X-s80">
+            <objects>
+                <controller title="Statistics" id="UvJ-OL-11N"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="779"/>
+        </scene>
+        <!--Add Answer-->
+        <scene sceneID="7eT-Ah-T1F">
+            <objects>
+                <controller title="Add Answer" id="oaH-pG-yKb" customClass="addAnswerInterfaceController">
+                    <items>
+                        <picker height="100" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg"/>
+                    </items>
+                    <connections>
+                        <outlet property="testNumPicker" destination="Br2-5p-uRg" id="kTH-Mc-Bhn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="226" y="756"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="8ra-ro-YKB">
+            <objects>
+                <controller title="Start" id="CY4-Zl-u37"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="756"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="259" y="1380"/>
         </scene>
     </scenes>
 </document>

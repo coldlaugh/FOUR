@@ -25,6 +25,7 @@
 		ADEFB04E1EA2C2F100A4D473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB04D1EA2C2F100A4D473 /* Assets.xcassets */; };
 		ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */; };
 		ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */; };
+		ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAUserActivity.h; sourceTree = "<group>"; };
 		ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAUserActivity.m; sourceTree = "<group>"; };
 		ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserActivity.xcdatamodel; sourceTree = "<group>"; };
+		ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addAnswerInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addAnswerInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */,
 				ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */,
 				ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */,
+				ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */,
+				ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
 				ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */,
@@ -486,6 +491,7 @@
 				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
+				ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,15 +644,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				INFOPLIST_FILE = "FOUR WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UMICH.FOUR.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -654,15 +662,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				INFOPLIST_FILE = "FOUR WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UMICH.FOUR.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -678,7 +688,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -694,7 +704,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -702,12 +712,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				INFOPLIST_FILE = FOUR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UMICH.FOUR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -715,12 +727,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				INFOPLIST_FILE = FOUR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UMICH.FOUR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
