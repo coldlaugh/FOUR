@@ -26,6 +26,7 @@
 		ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */; };
 		ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */; };
 		ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */; };
+		ADEFB09A1EA7C40600A4D473 /* staticticsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,8 @@
 		ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserActivity.xcdatamodel; sourceTree = "<group>"; };
 		ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addAnswerInterfaceController.h; sourceTree = "<group>"; };
 		ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addAnswerInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB0981EA7C40600A4D473 /* staticticsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticticsInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = staticticsInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,8 @@
 				ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */,
 				ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */,
 				ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */,
+				ADEFB0981EA7C40600A4D473 /* staticticsInterfaceController.h */,
+				ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
 				ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */,
@@ -490,6 +495,7 @@
 				ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */,
 				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
+				ADEFB09A1EA7C40600A4D473 /* staticticsInterfaceController.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
 				ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */,
 			);

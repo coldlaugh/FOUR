@@ -48,12 +48,16 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="-27" y="1380"/>
+            <point key="canvasLocation" x="-63" y="1790"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="lOH-2X-s80">
             <objects>
-                <controller title="Statistics" id="UvJ-OL-11N"/>
+                <controller title="Statistics" id="UvJ-OL-11N" customClass="staticticsInterfaceController">
+                    <items>
+                        <activity alignment="left" id="IYg-A2-uHx"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="512" y="779"/>
         </scene>
@@ -62,28 +66,72 @@
             <objects>
                 <controller title="Add Answer" id="oaH-pG-yKb" customClass="addAnswerInterfaceController">
                     <items>
-                        <picker height="100" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg"/>
+                        <picker height="109" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
+                            <connections>
+                                <action selector="testNumPickerAction:" destination="oaH-pG-yKb" id="AB6-FQ-WWW"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Input Answer" id="3pc-cq-G86">
+                            <connections>
+                                <segue destination="ZTi-0F-Llp" kind="push" id="8RG-es-2po"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="testNumPicker" destination="Br2-5p-uRg" id="kTH-Mc-Bhn"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="226" y="756"/>
+            <point key="canvasLocation" x="220" y="779"/>
         </scene>
         <!--Start-->
         <scene sceneID="8ra-ro-YKB">
             <objects>
                 <controller title="Start" id="CY4-Zl-u37"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="756"/>
+            <point key="canvasLocation" x="-57" y="779"/>
+        </scene>
+        <!--Return-->
+        <scene sceneID="8cQ-37-wpY">
+            <objects>
+                <controller title="Return" id="ZTi-0F-Llp">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="bs4-en-bp6">
+                            <items>
+                                <group width="0.69999999999999996" height="1" alignment="right" layout="vertical" id="rGC-Mb-Wnb">
+                                    <items>
+                                        <group width="0.80000000000000004" alignment="center" id="Bzq-R2-kNn">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Q.#" id="qx9-9a-9Yg"/>
+                                                <label alignment="right" verticalAlignment="center" text="S. #" id="W9f-rV-xnD"/>
+                                            </items>
+                                        </group>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="CVc-wV-rah"/>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Undo" id="Onb-qF-vzB"/>
+                                    </items>
+                                </group>
+                                <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" id="aIK-fM-g5W">
+                                    <items>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="A" id="wNV-WE-rtW"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="B" id="IRQ-bT-yBt"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="C" id="9jB-Wn-p9W"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="D" id="a9H-DX-Ygy"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="E" id="gyU-Ic-D48"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="1217"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="259" y="1380"/>
+            <point key="canvasLocation" x="272" y="1790"/>
         </scene>
     </scenes>
 </document>

@@ -11,6 +11,9 @@
 @interface addAnswerInterfaceController ()
 
 @property (weak) IBOutlet WKInterfacePicker* testNumPicker;
+@property NSInteger testNumberChosen;
+
+- (IBAction)testNumPickerAction:(NSInteger)index;
 
 @end
 
@@ -28,6 +31,7 @@
 	WKPickerItem *pickerItemArray[testLimit];
 	
 	for (NSInteger i = 0; i<testLimit; i++) {
+		pickerItemArray[i] = [WKPickerItem alloc];
 		[pickerItemArray[i] setTitle:[NSString stringWithFormat:@"Test %ld", (long) i]];
 	};
 	
@@ -46,6 +50,18 @@
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
 }
+
+
+#pragma mark picker action
+
+
+- (IBAction)testNumPickerAction:(NSInteger)index{
+	
+	_testNumberChosen = index;
+	NSLog(@"Debugging: picker action triggered");
+	
+}
+
 
 @end
 
