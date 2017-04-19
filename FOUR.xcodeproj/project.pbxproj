@@ -23,6 +23,8 @@
 		ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */; };
 		ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */; };
 		ADEFB04E1EA2C2F100A4D473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB04D1EA2C2F100A4D473 /* Assets.xcassets */; };
+		ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */; };
+		ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,9 @@
 		ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		ADEFB04D1EA2C2F100A4D473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEFB04F1EA2C2F100A4D473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAUserActivity.h; sourceTree = "<group>"; };
+		ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAUserActivity.m; sourceTree = "<group>"; };
+		ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserActivity.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +233,9 @@
 				ADEFB0441EA2C2F100A4D473 /* InterfaceController.h */,
 				ADEFB0451EA2C2F100A4D473 /* InterfaceController.m */,
 				ADEFB0471EA2C2F100A4D473 /* ExtensionDelegate.h */,
+				ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */,
+				ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */,
+				ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
 				ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */,
@@ -474,6 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */,
+				ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */,
+				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
 			);
@@ -783,6 +793,7 @@
 				ADEFB0541EA2C2F100A4D473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEFB0561EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +802,7 @@
 				ADEFB0581EA2C2F100A4D473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEFB05A1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR" */ = {
 			isa = XCConfigurationList;
@@ -799,6 +811,7 @@
 				ADEFB05C1EA2C2F100A4D473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEFB05D1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOURTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +820,7 @@
 				ADEFB05F1EA2C2F100A4D473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEFB0601EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOURUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,8 +829,22 @@
 				ADEFB0621EA2C2F100A4D473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */,
+			);
+			currentVersion = ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */;
+			path = UserActivity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ADEFAFF91EA2C2EE00A4D473 /* Project object */;
 }

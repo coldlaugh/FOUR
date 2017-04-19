@@ -50,4 +50,41 @@
     }
 }
 
+#pragma mark persistentContainer
+
+@synthesize persistentContainer = _persistentContainer;
+
+- (NSPersistentContainer*) persistentContainer {
+	
+	@synchronized (self) {
+		if (_persistentContainer != nil) {
+			return _persistentContainer;
+		}
+		
+		_persistentContainer = [[NSPersistentContainer alloc] initWithName:@"UserActivity"];
+		
+		[_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription * description, NSError * error) {
+			if (error != nil) {
+				abort();
+			}
+		}];
+		
+		
+		NSLog(@"finished load persistent container.");
+		
+		
+		return _persistentContainer;
+	}
+	
+	
+	
+	return self.persistentContainer;
+}
+
+- (IBAction)saveAction:(id)sender{
+	
+	
+	
+}
+
 @end
