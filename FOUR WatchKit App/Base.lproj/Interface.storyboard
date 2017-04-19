@@ -55,8 +55,49 @@
             <objects>
                 <controller title="Statistics" id="UvJ-OL-11N" customClass="staticticsInterfaceController">
                     <items>
-                        <activity alignment="left" id="IYg-A2-uHx"/>
+                        <group width="1" height="1" alignment="left" id="VYa-gu-TD9">
+                            <items>
+                                <activity alignment="left" id="t3o-Sa-iNj"/>
+                            </items>
+                        </group>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="3Mn-G7-N0c">
+                            <items>
+                                <group width="1" height="0.33000000000000002" alignment="left" layout="vertical" radius="10" id="6U6-Vk-SaL">
+                                    <items>
+                                        <label alignment="center" text="Practice hour" textAlignment="center" id="Da3-EQ-KWX"/>
+                                        <label alignment="center" text="2 hr / 20 hr" textAlignment="center" id="0oH-f9-1tj">
+                                            <color key="textColor" red="0.0029208867345005274" green="0.72767758369445801" blue="0.88264220952987671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" weight="heavy" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" layout="vertical" radius="10" id="0PQ-F7-09c">
+                                    <items>
+                                        <label alignment="center" text="Accuracy" textAlignment="center" id="FOU-fT-u8r"/>
+                                        <label alignment="center" text="90%" textAlignment="center" id="fyw-6n-r9W">
+                                            <color key="textColor" red="0.21415293216705322" green="0.86315709352493286" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" weight="heavy" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" layout="vertical" radius="10" id="RlF-Ng-oZo">
+                                    <items>
+                                        <label alignment="center" text="Reflection" textAlignment="center" id="6Pf-mW-CLk"/>
+                                        <label alignment="center" text="30 / 100" textAlignment="center" id="7yg-D8-UjR">
+                                            <color key="textColor" red="0.93591618537902832" green="0.094483517110347748" blue="0.29563891887664795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" weight="heavy" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="statRing" destination="t3o-Sa-iNj" id="I9g-xl-ppm"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="512" y="779"/>
@@ -66,12 +107,12 @@
             <objects>
                 <controller title="Add Answer" id="oaH-pG-yKb" customClass="addAnswerInterfaceController">
                     <items>
-                        <picker height="109" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
+                        <picker height="0.69999999999999996" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
                             <connections>
                                 <action selector="testNumPickerAction:" destination="oaH-pG-yKb" id="AB6-FQ-WWW"/>
                             </connections>
                         </picker>
-                        <button width="1" alignment="left" title="Input Answer" id="3pc-cq-G86">
+                        <button width="1" height="0.29999999999999999" alignment="left" title="Input Answer" id="3pc-cq-G86">
                             <connections>
                                 <segue destination="ZTi-0F-Llp" kind="push" id="8RG-es-2po"/>
                             </connections>
@@ -87,9 +128,72 @@
         <!--Start-->
         <scene sceneID="8ra-ro-YKB">
             <objects>
-                <controller title="Start" id="CY4-Zl-u37"/>
+                <controller title="Start" id="CY4-Zl-u37">
+                    <items>
+                        <picker height="100" alignment="left" id="InR-6K-VSy"/>
+                        <button width="1" alignment="left" title="Timer" id="WAO-W3-yZe">
+                            <connections>
+                                <segue destination="ELZ-Yt-8Fn" kind="modal" id="9RU-8G-wc7"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Start" id="v4u-iT-nCz">
+                            <connections>
+                                <segue destination="AkE-7g-VDL" kind="push" id="XVF-mf-26E"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="-57" y="779"/>
+            <point key="canvasLocation" x="-57" y="760"/>
+        </scene>
+        <!--Exercise-->
+        <scene sceneID="dGo-qp-bM1">
+            <objects>
+                <controller title="Exercise" id="AkE-7g-VDL">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="z38-Jf-1l1">
+                            <items>
+                                <group width="0.69999999999999996" height="1" alignment="right" layout="vertical" id="knF-xu-hIj">
+                                    <items>
+                                        <group width="0.80000000000000004" alignment="center" id="Znj-cA-oCx">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Q.#" id="DiQ-7l-dfc"/>
+                                                <label alignment="right" verticalAlignment="center" text="S. #" id="TI5-kn-E6N"/>
+                                            </items>
+                                        </group>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Next Sec" id="Y8e-58-IlT"/>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Undo" id="iak-6T-jaM"/>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Finish" id="3fp-tK-5Dx"/>
+                                        <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="yHK-FO-nfR"/>
+                                    </items>
+                                </group>
+                                <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" id="L7U-6n-Eep">
+                                    <items>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="A" id="RHS-Le-SBi"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="B" id="c40-f2-oIZ"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="C" id="odf-tK-Dbp"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="D" id="Kj6-ka-KNm"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="E" id="C05-Qn-Jhe"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-312" y="1217"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="W3Q-lQ-HnD">
+            <objects>
+                <controller title="Timer" id="ELZ-Yt-8Fn">
+                    <items>
+                        <picker height="100" alignment="left" id="aFg-IR-ho6"/>
+                        <button width="1" alignment="left" title="Set" id="GBq-Qz-MvT"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-57" y="1217"/>
         </scene>
         <!--Return-->
         <scene sceneID="8cQ-37-wpY">

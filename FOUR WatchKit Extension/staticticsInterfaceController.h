@@ -8,6 +8,7 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
+#import <HealthKit/HealthKit.h>
 
 @interface staticticsInterfaceController : WKInterfaceController
 
