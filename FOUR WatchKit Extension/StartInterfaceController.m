@@ -61,6 +61,15 @@
 	_appDelegate.userChoice.testNumChosen = index; 
 }
 
+- (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier{
+	
+//	NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:[NSMethodSignature signatureWithObjCTypes:"NSObject"]];
+//	if ([segueIdentifier isEqualToString:@"start"]) {
+//		_appDelegate.userChoice.timer = [NSTimer scheduledTimerWithTimeInterval:_appDelegate.userChoice.timeSecond invocation:invocation repeats:NO];
+//	}
+	return nil;
+}
+
 @end
 
 

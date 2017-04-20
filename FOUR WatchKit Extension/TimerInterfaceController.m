@@ -69,9 +69,11 @@
 	}
 	else{
 		_appDelegate.userChoice.isTimerEnabled = YES;
-//		_appDelegate.userChoice. =
+		_appDelegate.userChoice.timeSecond = index * 60.0;
 	}
 }
+
+
 
 @end
 

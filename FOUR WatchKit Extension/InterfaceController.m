@@ -22,8 +22,6 @@
 
 @property ExtensionDelegate* appDelegate;
 
-- (IBAction)startAction:(id)sender;
-- (IBAction)inputAnswerAction:(id)sender;
 
 @end
 
@@ -77,16 +75,16 @@
 	_sliderValue = value;
 }
 
-- (IBAction)startAction:(id)sender{
-	_appDelegate.userChoice.isTrueAnswerInput = NO;
-}
-
-- (IBAction)inputAnswerAction:(id)sender{
-	_appDelegate.userChoice.isTrueAnswerInput = YES;
-}
+// Prepare for segue
 
 - (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier{
-
+	
+	if ([segueIdentifier isEqualToString:@"AnnAnswer"]) {
+		_appDelegate.userChoice.isTrueAnswerInput = YES;
+	} else {
+		_appDelegate.userChoice.isTrueAnswerInput = NO;
+	}
+	
 	return segueIdentifier;
 	
 }

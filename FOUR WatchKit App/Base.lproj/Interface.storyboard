@@ -16,14 +16,12 @@
                     <items>
                         <button width="1" alignment="left" title="Start" id="UEy-DX-Tsn">
                             <connections>
-                                <action selector="startAction:" destination="AgC-eL-Hgc" id="mUV-aV-2mh"/>
                                 <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Add Answer" id="3Pv-Sr-GCm">
                             <connections>
-                                <action selector="inputAnswerAction:" destination="AgC-eL-Hgc" id="PWj-zD-Sqe"/>
-                                <segue destination="ZTi-0F-Llp" kind="push" identifier="add" id="QyT-tT-pFV"/>
+                                <segue destination="ZTi-0F-Llp" kind="push" identifier="AddAnswer" id="QyT-tT-pFV"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Statistics" id="pgB-2e-HMX">
@@ -139,7 +137,7 @@
                         </button>
                         <button width="1" height="0.25" alignment="left" title="Start" id="v4u-iT-nCz">
                             <connections>
-                                <segue destination="ZTi-0F-Llp" kind="push" id="S1j-v7-4r3"/>
+                                <segue destination="ZTi-0F-Llp" kind="push" identifier="start" id="S1j-v7-4r3"/>
                             </connections>
                         </button>
                     </items>
@@ -222,17 +220,56 @@
                                                 <segue destination="oaH-pG-yKb" kind="modal" id="RYX-uo-jFw"/>
                                             </connections>
                                         </button>
-                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="Os9-z2-rA2"/>
-                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Undo" id="Onb-qF-vzB"/>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="Os9-z2-rA2">
+                                            <connections>
+                                                <action selector="selectNexrSection" destination="ZTi-0F-Llp" id="96e-gM-Yqh"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Undo" id="Onb-qF-vzB">
+                                            <connections>
+                                                <action selector="selectUndo" destination="ZTi-0F-Llp" id="rLD-qk-F7x"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Pause" id="z0a-p1-Vg5">
+                                            <connections>
+                                                <action selector="selectPause" destination="ZTi-0F-Llp" id="fv1-s8-faS"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Pause" id="0mN-Tb-4hO">
+                                            <connections>
+                                                <action selector="selectStart" destination="ZTi-0F-Llp" id="4BP-wf-TMZ"/>
+                                            </connections>
+                                        </button>
+                                        <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="BXU-dg-grg"/>
                                     </items>
                                 </group>
                                 <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" id="aIK-fM-g5W">
                                     <items>
-                                        <button width="1" height="0.20000000000000001" alignment="left" title="A" id="wNV-WE-rtW"/>
-                                        <button width="1" height="0.20000000000000001" alignment="left" title="B" id="IRQ-bT-yBt"/>
-                                        <button width="1" height="0.20000000000000001" alignment="left" title="C" id="9jB-Wn-p9W"/>
-                                        <button width="1" height="0.20000000000000001" alignment="left" title="D" id="a9H-DX-Ygy"/>
-                                        <button width="1" height="0.20000000000000001" alignment="left" title="E" id="gyU-Ic-D48"/>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="A" id="wNV-WE-rtW">
+                                            <connections>
+                                                <action selector="selectA" destination="ZTi-0F-Llp" id="cbi-KL-a9C"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="B" id="IRQ-bT-yBt">
+                                            <connections>
+                                                <action selector="selectB" destination="ZTi-0F-Llp" id="R3V-Ua-HLg"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="C" id="9jB-Wn-p9W">
+                                            <connections>
+                                                <action selector="selectC" destination="ZTi-0F-Llp" id="1hd-Fx-BSg"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="D" id="a9H-DX-Ygy">
+                                            <connections>
+                                                <action selector="selectD" destination="ZTi-0F-Llp" id="WCR-1K-HrP"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" height="0.20000000000000001" alignment="left" title="E" id="gyU-Ic-D48">
+                                            <connections>
+                                                <action selector="selectE" destination="ZTi-0F-Llp" id="bQV-R3-l3T"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
@@ -240,7 +277,12 @@
                     </items>
                     <connections>
                         <outlet property="nextSectionButton" destination="Os9-z2-rA2" id="BIK-cf-kVi"/>
+                        <outlet property="pauseButton" destination="z0a-p1-Vg5" id="j3h-fC-Wai"/>
+                        <outlet property="quesNumLabel" destination="qx9-9a-9Yg" id="7iV-Zh-yxc"/>
+                        <outlet property="secNumLabel" destination="W9f-rV-xnD" id="X8z-37-H5d"/>
                         <outlet property="selectPrepButton" destination="CVc-wV-rah" id="CMb-NG-4e7"/>
+                        <outlet property="startButton" destination="0mN-Tb-4hO" id="fm0-SS-52W"/>
+                        <outlet property="timer" destination="BXU-dg-grg" id="tPP-rf-BDS"/>
                         <outlet property="undoButton" destination="Onb-qF-vzB" id="fur-Fy-1wh"/>
                     </connections>
                 </controller>
@@ -256,7 +298,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QyT-tT-pFV"/>
+        <segue reference="S1j-v7-4r3"/>
         <segue reference="RYX-uo-jFw"/>
     </inferredMetricsTieBreakers>
 </document>

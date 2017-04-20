@@ -11,8 +11,11 @@
 @interface UserChoiceController : NSObject
 
 @property (nonatomic) NSTimer* timer;
+@property (nonatomic) float timeSecond;
 @property (nonatomic) BOOL isTimerEnabled;
 @property (nonatomic) NSInteger testNumChosen;
+@property (nonatomic) NSInteger quesNumCurrent;
+@property (nonatomic) NSInteger secNumCurrent;
 @property (nonatomic) BOOL isTrueAnswerInput;
 
 @end
