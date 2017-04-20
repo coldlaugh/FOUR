@@ -16,12 +16,14 @@
                     <items>
                         <button width="1" alignment="left" title="Start" id="UEy-DX-Tsn">
                             <connections>
+                                <action selector="startAction:" destination="AgC-eL-Hgc" id="mUV-aV-2mh"/>
                                 <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Add Answer" id="3Pv-Sr-GCm">
                             <connections>
-                                <segue destination="oaH-pG-yKb" kind="push" id="3xL-5e-91a"/>
+                                <action selector="inputAnswerAction:" destination="AgC-eL-Hgc" id="PWj-zD-Sqe"/>
+                                <segue destination="ZTi-0F-Llp" kind="push" id="QyT-tT-pFV"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Statistics" id="pgB-2e-HMX">
@@ -100,56 +102,55 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="512" y="779"/>
+            <point key="canvasLocation" x="515" y="839"/>
         </scene>
-        <!--Add Answer-->
+        <!--Set prep-->
         <scene sceneID="7eT-Ah-T1F">
             <objects>
-                <controller title="Add Answer" id="oaH-pG-yKb" customClass="addAnswerInterfaceController">
+                <controller title="Set prep" id="oaH-pG-yKb" customClass="TestPickerInterfaceController">
                     <items>
-                        <picker height="0.69999999999999996" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
+                        <picker width="1" height="1" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
                             <connections>
                                 <action selector="testNumPickerAction:" destination="oaH-pG-yKb" id="AB6-FQ-WWW"/>
                             </connections>
                         </picker>
-                        <button width="1" height="0.29999999999999999" alignment="left" title="Input Answer" id="3pc-cq-G86">
-                            <connections>
-                                <segue destination="ZTi-0F-Llp" kind="push" id="8RG-es-2po"/>
-                            </connections>
-                        </button>
                     </items>
                     <connections>
                         <outlet property="testNumPicker" destination="Br2-5p-uRg" id="kTH-Mc-Bhn"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="779"/>
+            <point key="canvasLocation" x="120" y="1229"/>
         </scene>
         <!--Start-->
         <scene sceneID="8ra-ro-YKB">
             <objects>
-                <controller title="Start" id="CY4-Zl-u37">
+                <controller title="Start" id="CY4-Zl-u37" customClass="StartInterfaceController">
                     <items>
-                        <picker height="100" alignment="left" id="InR-6K-VSy"/>
-                        <button width="1" alignment="left" title="Timer" id="WAO-W3-yZe">
+                        <button width="1" alignment="left" title="Select prep" id="fyv-qM-Yog">
+                            <connections>
+                                <segue destination="oaH-pG-yKb" kind="modal" id="NMw-0y-w9b"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.25" alignment="left" title="Timer" id="WAO-W3-yZe">
                             <connections>
                                 <segue destination="ELZ-Yt-8Fn" kind="modal" id="9RU-8G-wc7"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Start" id="v4u-iT-nCz">
+                        <button width="1" height="0.25" alignment="left" title="Start" id="v4u-iT-nCz">
                             <connections>
-                                <segue destination="AkE-7g-VDL" kind="push" id="XVF-mf-26E"/>
+                                <segue destination="ZTi-0F-Llp" kind="push" id="S1j-v7-4r3"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-57" y="760"/>
+            <point key="canvasLocation" x="-57" y="795"/>
         </scene>
-        <!--Exercise-->
+        <!--finish-->
         <scene sceneID="dGo-qp-bM1">
             <objects>
-                <controller title="Exercise" id="AkE-7g-VDL">
+                <controller title="finish" id="AkE-7g-VDL">
                     <items>
                         <group width="1" height="1" alignment="left" id="z38-Jf-1l1">
                             <items>
@@ -163,7 +164,7 @@
                                         </group>
                                         <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Next Sec" id="Y8e-58-IlT"/>
                                         <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Undo" id="iak-6T-jaM"/>
-                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Finish" id="3fp-tK-5Dx"/>
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Pause" id="3fp-tK-5Dx"/>
                                         <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="yHK-FO-nfR"/>
                                     </items>
                                 </group>
@@ -181,24 +182,30 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-312" y="1217"/>
+            <point key="canvasLocation" x="-433" y="1045"/>
         </scene>
-        <!--Timer-->
+        <!--Set timer-->
         <scene sceneID="W3Q-lQ-HnD">
             <objects>
-                <controller title="Timer" id="ELZ-Yt-8Fn">
+                <controller title="Set timer" id="ELZ-Yt-8Fn" customClass="TimerInterfaceController">
                     <items>
-                        <picker height="100" alignment="left" id="aFg-IR-ho6"/>
-                        <button width="1" alignment="left" title="Set" id="GBq-Qz-MvT"/>
+                        <picker height="1" alignment="left" id="aFg-IR-ho6">
+                            <connections>
+                                <action selector="timerPickerAction:" destination="ELZ-Yt-8Fn" id="mZE-Gi-BPb"/>
+                            </connections>
+                        </picker>
                     </items>
+                    <connections>
+                        <outlet property="timerPicker" destination="aFg-IR-ho6" id="8r8-9t-Swe"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-57" y="1217"/>
+            <point key="canvasLocation" x="-164" y="1229"/>
         </scene>
-        <!--Return-->
+        <!--Input your answer-->
         <scene sceneID="8cQ-37-wpY">
             <objects>
-                <controller title="Return" id="ZTi-0F-Llp">
+                <controller title="Input your answer" id="ZTi-0F-Llp" customClass="InputSelectionInterfaceController">
                     <items>
                         <group width="1" height="1" alignment="left" id="bs4-en-bp6">
                             <items>
@@ -210,7 +217,12 @@
                                                 <label alignment="right" verticalAlignment="center" text="S. #" id="W9f-rV-xnD"/>
                                             </items>
                                         </group>
-                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="CVc-wV-rah"/>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="select prep" id="CVc-wV-rah">
+                                            <connections>
+                                                <segue destination="oaH-pG-yKb" kind="modal" id="RYX-uo-jFw"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="Os9-z2-rA2"/>
                                         <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Undo" id="Onb-qF-vzB"/>
                                     </items>
                                 </group>
@@ -228,7 +240,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="1217"/>
+            <point key="canvasLocation" x="220" y="795"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
@@ -238,4 +250,8 @@
             <point key="canvasLocation" x="272" y="1790"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NMw-0y-w9b"/>
+        <segue reference="S1j-v7-4r3"/>
+    </inferredMetricsTieBreakers>
 </document>

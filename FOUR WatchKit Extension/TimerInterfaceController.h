@@ -1,5 +1,5 @@
 //
-//  addAnswerInterfaceController.h
+//  TimerInterfaceController.h
 //  FOUR
 //
 //  Created by leyou on 4/19/17.
@@ -9,6 +9,6 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface addAnswerInterfaceController : WKInterfaceController
+@interface TimerInterfaceController : WKInterfaceController
 
 @end

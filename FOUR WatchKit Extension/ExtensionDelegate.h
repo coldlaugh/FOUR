@@ -8,11 +8,12 @@
 
 #import <WatchKit/WatchKit.h>
 #import <CoreData/CoreData.h>
+#import "UserChoiceController.h"
 
 @interface ExtensionDelegate : NSObject <WKExtensionDelegate>
 
 @property (strong, readonly) NSPersistentContainer *persistentContainer;
 
--(IBAction)saveAction:(id)sender;
+@property (strong, nonatomic) UserChoiceController* userChoice;
 
 @end

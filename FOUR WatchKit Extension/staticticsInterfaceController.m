@@ -1,14 +1,14 @@
 //
-//  staticticsInterfaceController.m
+//  SaticticsInterfaceController.m
 //  FOUR
 //
 //  Created by leyou on 4/19/17.
 //  Copyright © 2017 leyou. All rights reserved.
 //
 
-#import "staticticsInterfaceController.h"
+#import "StaticticsInterfaceController.h"
 
-@interface staticticsInterfaceController ()
+@interface StaicticsInterfaceController ()
 
 
 @property (weak) IBOutlet WKInterfaceActivityRing* statRing;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation staticticsInterfaceController
+@implementation StaicticsInterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];

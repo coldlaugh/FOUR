@@ -1,30 +1,30 @@
 //
-//  addAnswerInterfaceController.m
+//  startInterfaceController.m
 //  FOUR
 //
 //  Created by leyou on 4/19/17.
 //  Copyright © 2017 leyou. All rights reserved.
 //
 
-#import "addAnswerInterfaceController.h"
+#import "StartInterfaceController.h"
+#import "ExtensionDelegate.h"
 
-@interface addAnswerInterfaceController ()
+@interface StartInterfaceController ()
 
 @property (weak) IBOutlet WKInterfacePicker* testNumPicker;
-@property NSInteger testNumberChosen;
+@property ExtensionDelegate* appDelegate;
 
-- (IBAction)testNumPickerAction:(NSInteger)index;
+- (IBAction)testPickerAction:(NSInteger)index;
+
 
 @end
 
-@implementation addAnswerInterfaceController
+@implementation StartInterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
     // Configure interface objects here.
-	
-	// Configure testNumPicker;
 	
 	NSInteger testLimit = 80;
 	
@@ -39,11 +39,17 @@
 	
 	[_testNumPicker setItems:pickerItem];
 	
+	// Assign pointer to app delegate
+	
+	_appDelegate = (ExtensionDelegate*) [WKExtension sharedExtension].delegate;
+	
+	
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+	
 }
 
 - (void)didDeactivate {
@@ -51,17 +57,9 @@
     [super didDeactivate];
 }
 
-
-#pragma mark picker action
-
-
-- (IBAction)testNumPickerAction:(NSInteger)index{
-	
-	_testNumberChosen = index;
-	NSLog(@"Debugging: picker action triggered");
-	
+- (IBAction)testPickerAction:(NSInteger)index{
+	_appDelegate.userChoice.testNumChosen = index; 
 }
-
 
 @end
 

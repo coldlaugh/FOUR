@@ -12,6 +12,11 @@
 
 - (void)applicationDidFinishLaunching {
     // Perform any final initialization of your application.
+	
+	// Allocate the user activity data for UI control
+	
+	self.userChoice = [UserChoiceController alloc];
+	
 }
 
 - (void)applicationDidBecomeActive {
@@ -81,10 +86,5 @@
 	return self.persistentContainer;
 }
 
-- (IBAction)saveAction:(id)sender{
-	
-	
-	
-}
 
 @end

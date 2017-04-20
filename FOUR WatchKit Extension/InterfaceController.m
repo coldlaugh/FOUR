@@ -19,6 +19,12 @@
 @property (nonatomic) float sliderValue;
 - (IBAction)sliderAction:(float)value;
 
+
+@property ExtensionDelegate* appDelegate;
+
+- (IBAction)startAction:(id)sender;
+- (IBAction)inputAnswerAction:(id)sender;
+
 @end
 
 
@@ -30,6 +36,8 @@
     // Configure interface objects here.
 	
 	_sliderValue = 0.0;
+	
+	_appDelegate = (ExtensionDelegate*) [WKExtension sharedExtension].delegate;
 	
 	
 }
@@ -47,8 +55,8 @@
 - (IBAction)saveAction:(id)sender{
 	NSLog(@"Debugging: slider value = %f",_sliderValue);
 	
-	ExtensionDelegate* delegate = [WKExtension sharedExtension].delegate;
-	NSManagedObjectContext* taskContext = delegate.persistentContainer.viewContext;
+
+	NSManagedObjectContext* taskContext = _appDelegate.persistentContainer.viewContext;
 	AAUserActivity* activity = [NSEntityDescription insertNewObjectForEntityForName:@"TEST" inManagedObjectContext:taskContext];
 	[activity setSliderValue:_sliderValue];
 	
@@ -68,6 +76,16 @@
 	NSLog(@"Debugging: set slider value = %f",value);
 	_sliderValue = value;
 }
+
+- (IBAction)startAction:(id)sender{
+	_appDelegate.userChoice.isTrueAnswerInput = NO;
+}
+
+- (IBAction)inputAnswerAction:(id)sender{
+	_appDelegate.userChoice.isTrueAnswerInput = YES;
+}
+
+
 
 @end
 

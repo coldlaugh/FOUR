@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */; };
 		ADEFB0061EA2C2EF00A4D473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0051EA2C2EF00A4D473 /* main.m */; };
 		ADEFB0091EA2C2EF00A4D473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0081EA2C2EF00A4D473 /* AppDelegate.m */; };
 		ADEFB00C1EA2C2EF00A4D473 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB00B1EA2C2EF00A4D473 /* ViewController.m */; };
@@ -25,8 +26,19 @@
 		ADEFB04E1EA2C2F100A4D473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB04D1EA2C2F100A4D473 /* Assets.xcassets */; };
 		ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */; };
 		ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */; };
-		ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */; };
-		ADEFB09A1EA7C40600A4D473 /* staticticsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */; };
+		ADEFB0961EA7AECD00A4D473 /* TestPickerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0951EA7AECD00A4D473 /* TestPickerInterfaceController.m */; };
+		ADEFB09A1EA7C40600A4D473 /* StaticticsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0991EA7C40600A4D473 /* StaticticsInterfaceController.m */; };
+		ADEFB0A11EA7DC8200A4D473 /* TimerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0A01EA7DC8200A4D473 /* TimerInterfaceController.m */; };
+		ADEFB0BC1EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */; };
+		ADEFB0BD1EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */; };
+		ADEFB0BE1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */; };
+		ADEFB0BF1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B71EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png */; };
+		ADEFB0C01EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B81EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png */; };
+		ADEFB0C11EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0B91EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png */; };
+		ADEFB0C21EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0BA1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png */; };
+		ADEFB0C31EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0BB1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png */; };
+		ADEFB0C61EA80C3600A4D473 /* StartInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0C51EA80C3600A4D473 /* StartInterfaceController.m */; };
+		ADEFB0C91EA82F2400A4D473 /* UserChoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +98,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSelectionInterfaceController.h; sourceTree = "<group>"; };
+		ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSelectionInterfaceController.m; sourceTree = "<group>"; };
 		ADEFB0011EA2C2EE00A4D473 /* FOUR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOUR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEFB0051EA2C2EF00A4D473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADEFB0071EA2C2EF00A4D473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,10 +133,24 @@
 		ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAUserActivity.h; sourceTree = "<group>"; };
 		ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAUserActivity.m; sourceTree = "<group>"; };
 		ADEFB0921EA710D900A4D473 /* UserActivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserActivity.xcdatamodel; sourceTree = "<group>"; };
-		ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addAnswerInterfaceController.h; sourceTree = "<group>"; };
-		ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addAnswerInterfaceController.m; sourceTree = "<group>"; };
-		ADEFB0981EA7C40600A4D473 /* staticticsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticticsInterfaceController.h; sourceTree = "<group>"; };
-		ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = staticticsInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB0941EA7AECD00A4D473 /* TestPickerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPickerInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0951EA7AECD00A4D473 /* TestPickerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPickerInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB0981EA7C40600A4D473 /* StaticticsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticticsInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0991EA7C40600A4D473 /* StaticticsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticticsInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB09F1EA7DC8200A4D473 /* TimerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0A01EA7DC8200A4D473 /* TimerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-Companion-29x29@3x.png"; sourceTree = "<group>"; };
+		ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-Companion-29x29@2x.png"; sourceTree = "<group>"; };
+		ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-42mm-98x98@2x.png"; sourceTree = "<group>"; };
+		ADEFB0B71EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-42mm-44x44@2x.png"; sourceTree = "<group>"; };
+		ADEFB0B81EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-42mm-27.5x27.5@2x.png"; sourceTree = "<group>"; };
+		ADEFB0B91EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-38mm-86x86@2x.png"; sourceTree = "<group>"; };
+		ADEFB0BA1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-38mm-40x40@2x.png"; sourceTree = "<group>"; };
+		ADEFB0BB1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-HomeScreen-38mm-24x24@2x.png"; sourceTree = "<group>"; };
+		ADEFB0C41EA80C3600A4D473 /* StartInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartInterfaceController.h; sourceTree = "<group>"; };
+		ADEFB0C51EA80C3600A4D473 /* StartInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartInterfaceController.m; sourceTree = "<group>"; };
+		ADEFB0C71EA82F2400A4D473 /* UserChoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserChoiceController.h; sourceTree = "<group>"; };
+		ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserChoiceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,11 +269,19 @@
 				ADEFB0471EA2C2F100A4D473 /* ExtensionDelegate.h */,
 				ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */,
 				ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */,
+				ADEFB09F1EA7DC8200A4D473 /* TimerInterfaceController.h */,
+				ADEFB0A01EA7DC8200A4D473 /* TimerInterfaceController.m */,
 				ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */,
-				ADEFB0941EA7AECD00A4D473 /* addAnswerInterfaceController.h */,
-				ADEFB0951EA7AECD00A4D473 /* addAnswerInterfaceController.m */,
-				ADEFB0981EA7C40600A4D473 /* staticticsInterfaceController.h */,
-				ADEFB0991EA7C40600A4D473 /* staticticsInterfaceController.m */,
+				ADEFB0941EA7AECD00A4D473 /* TestPickerInterfaceController.h */,
+				ADEFB0C41EA80C3600A4D473 /* StartInterfaceController.h */,
+				ADEFB0C71EA82F2400A4D473 /* UserChoiceController.h */,
+				ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */,
+				ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */,
+				ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */,
+				ADEFB0C51EA80C3600A4D473 /* StartInterfaceController.m */,
+				ADEFB0951EA7AECD00A4D473 /* TestPickerInterfaceController.m */,
+				ADEFB0981EA7C40600A4D473 /* StaticticsInterfaceController.h */,
+				ADEFB0991EA7C40600A4D473 /* StaticticsInterfaceController.m */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
 				ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */,
@@ -259,6 +295,14 @@
 		ADEFB0421EA2C2F100A4D473 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */,
+				ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */,
+				ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */,
+				ADEFB0B71EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png */,
+				ADEFB0B81EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png */,
+				ADEFB0B91EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png */,
+				ADEFB0BA1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png */,
+				ADEFB0BB1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png */,
 				ADEFB0431EA2C2F100A4D473 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -455,6 +499,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEFB04E1EA2C2F100A4D473 /* Assets.xcassets in Resources */,
+				ADEFB0C11EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png in Resources */,
+				ADEFB0C01EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png in Resources */,
+				ADEFB0BC1EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png in Resources */,
+				ADEFB0C21EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png in Resources */,
+				ADEFB0BD1EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png in Resources */,
+				ADEFB0BE1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png in Resources */,
+				ADEFB0C31EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png in Resources */,
+				ADEFB0BF1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,10 +546,14 @@
 				ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */,
 				ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */,
 				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
+				ADEFB0C61EA80C3600A4D473 /* StartInterfaceController.m in Sources */,
+				ADEFB0A11EA7DC8200A4D473 /* TimerInterfaceController.m in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
-				ADEFB09A1EA7C40600A4D473 /* staticticsInterfaceController.m in Sources */,
+				ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */,
+				ADEFB09A1EA7C40600A4D473 /* StaticticsInterfaceController.m in Sources */,
+				ADEFB0C91EA82F2400A4D473 /* UserChoiceController.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
-				ADEFB0961EA7AECD00A4D473 /* addAnswerInterfaceController.m in Sources */,
+				ADEFB0961EA7AECD00A4D473 /* TestPickerInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +741,7 @@
 		ADEFB0571EA2C2F100A4D473 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconForWatch;
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				IBSC_MODULE = FOUR_WatchKit_Extension;
 				INFOPLIST_FILE = "FOUR WatchKit App/Info.plist";
@@ -701,7 +757,7 @@
 		ADEFB0581EA2C2F100A4D473 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconForWatch;
 				DEVELOPMENT_TEAM = S6UDW3AB6Q;
 				IBSC_MODULE = FOUR_WatchKit_Extension;
 				INFOPLIST_FILE = "FOUR WatchKit App/Info.plist";
