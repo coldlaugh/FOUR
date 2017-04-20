@@ -85,7 +85,11 @@
 	_appDelegate.userChoice.isTrueAnswerInput = YES;
 }
 
+- (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier{
 
+	return segueIdentifier;
+	
+}
 
 @end
 

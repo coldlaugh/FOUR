@@ -74,10 +74,6 @@
 			}
 		}];
 		
-		
-		NSLog(@"finished load persistent container.");
-		
-		
 		return _persistentContainer;
 	}
 	

@@ -7,8 +7,14 @@
 //
 
 #import "InputSelectionInterfaceController.h"
+#import "ExtensionDelegate.h"
 
 @interface InputSelectionInterfaceController ()
+
+@property ExtensionDelegate* delegate;
+@property (nonatomic) IBOutlet WKInterfaceButton* selectPrepButton;
+@property (nonatomic) IBOutlet WKInterfaceButton* nextSectionButton;
+@property (nonatomic) IBOutlet WKInterfaceButton* undoButton;
 
 @end
 
@@ -18,6 +24,16 @@
     [super awakeWithContext:context];
     
     // Configure interface objects here.
+	
+	_delegate = (ExtensionDelegate*) [WKExtension sharedExtension].delegate;
+	
+	if (context != nil) {
+		[_selectPrepButton setHidden:NO];
+		[_selectPrepButton setTitle:context];
+	} else {
+		[_selectPrepButton setHidden:YES];
+	}
+	
 }
 
 - (void)willActivate {
@@ -29,7 +45,6 @@
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
 }
-
 @end
 
 

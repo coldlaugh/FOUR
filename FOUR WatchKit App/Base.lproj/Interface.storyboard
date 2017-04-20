@@ -23,7 +23,7 @@
                         <button width="1" alignment="left" title="Add Answer" id="3Pv-Sr-GCm">
                             <connections>
                                 <action selector="inputAnswerAction:" destination="AgC-eL-Hgc" id="PWj-zD-Sqe"/>
-                                <segue destination="ZTi-0F-Llp" kind="push" id="QyT-tT-pFV"/>
+                                <segue destination="ZTi-0F-Llp" kind="push" identifier="add" id="QyT-tT-pFV"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Statistics" id="pgB-2e-HMX">
@@ -182,7 +182,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-433" y="1045"/>
+            <point key="canvasLocation" x="-438" y="934"/>
         </scene>
         <!--Set timer-->
         <scene sceneID="W3Q-lQ-HnD">
@@ -238,6 +238,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="nextSectionButton" destination="Os9-z2-rA2" id="BIK-cf-kVi"/>
+                        <outlet property="selectPrepButton" destination="CVc-wV-rah" id="CMb-NG-4e7"/>
+                        <outlet property="undoButton" destination="Onb-qF-vzB" id="fur-Fy-1wh"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="795"/>
@@ -251,7 +256,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NMw-0y-w9b"/>
-        <segue reference="S1j-v7-4r3"/>
+        <segue reference="QyT-tT-pFV"/>
+        <segue reference="RYX-uo-jFw"/>
     </inferredMetricsTieBreakers>
 </document>
