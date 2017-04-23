@@ -29,11 +29,16 @@
 	
 	NSInteger testLimit = 80;
 	
-	WKPickerItem *pickerItemArray[testLimit];
+	WKPickerItem *pickerItemArray[testLimit+1];
 	
-	for (NSInteger i = 0; i<testLimit; i++) {
+	for (NSInteger i = 0; i<testLimit+1; i++) {
 		pickerItemArray[i] = [WKPickerItem alloc];
-		[pickerItemArray[i] setTitle:[NSString stringWithFormat:@"Test %ld", (long) i]];
+		if (i == 0) {
+			[pickerItemArray[i] setTitle:@"Select prep test"];
+		} else {
+			[pickerItemArray[i] setTitle:[NSString stringWithFormat:@"Test %d", i]];
+		}
+		
 	};
 	
 	NSArray *pickerItem = [NSArray arrayWithObjects:pickerItemArray count: testLimit];
@@ -49,6 +54,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+	[_testNumPicker setSelectedItemIndex:_appDelegate.userChoice.testNumChosen];
 }
 
 - (void)didDeactivate {
@@ -59,6 +65,11 @@
 
 #pragma mark picker action
 
+- (void)pickerDidSettle:(WKInterfacePicker *)picker{
+	//Porform expensive tasks.
+	
+	
+}
 
 - (IBAction)testNumPickerAction:(NSInteger)index{
 	_appDelegate.userChoice.testNumChosen = index;

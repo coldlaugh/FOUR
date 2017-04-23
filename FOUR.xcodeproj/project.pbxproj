@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD24F1B51EA9AC18007627BE /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD24F1B41EA9AC18007627BE /* 1.png */; };
+		AD24F1BD1EAC0132007627BE /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24F1BC1EAC0132007627BE /* Answer.m */; };
+		AD67000C1EAC58550096303E /* ViewerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000B1EAC58550096303E /* ViewerInterfaceController.m */; };
+		AD6700101EAC60040096303E /* tableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000F1EAC60040096303E /* tableRow.m */; };
 		ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */; };
 		ADEFB0061EA2C2EF00A4D473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0051EA2C2EF00A4D473 /* main.m */; };
 		ADEFB0091EA2C2EF00A4D473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0081EA2C2EF00A4D473 /* AppDelegate.m */; };
@@ -98,6 +102,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD24F1B41EA9AC18007627BE /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		AD24F1BB1EAC0132007627BE /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		AD24F1BC1EAC0132007627BE /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		AD24F1BE1EAC01C6007627BE /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		AD67000A1EAC58550096303E /* ViewerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerInterfaceController.h; sourceTree = "<group>"; };
+		AD67000B1EAC58550096303E /* ViewerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewerInterfaceController.m; sourceTree = "<group>"; };
+		AD67000E1EAC60040096303E /* tableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableRow.h; sourceTree = "<group>"; };
+		AD67000F1EAC60040096303E /* tableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableRow.m; sourceTree = "<group>"; };
 		ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSelectionInterfaceController.h; sourceTree = "<group>"; };
 		ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSelectionInterfaceController.m; sourceTree = "<group>"; };
 		ADEFB0011EA2C2EE00A4D473 /* FOUR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOUR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +197,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD24F1B61EA9AC1E007627BE /* ArtWork */ = {
+			isa = PBXGroup;
+			children = (
+				ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */,
+				ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */,
+				ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */,
+				ADEFB0B71EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png */,
+				ADEFB0B81EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png */,
+				ADEFB0B91EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png */,
+				ADEFB0BA1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png */,
+				ADEFB0BB1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png */,
+				AD24F1B41EA9AC18007627BE /* 1.png */,
+			);
+			name = ArtWork;
+			sourceTree = "<group>";
+		};
+		AD24F1BA1EAC0105007627BE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD24F1BE1EAC01C6007627BE /* Data.h */,
+				AD24F1BB1EAC0132007627BE /* Answer.h */,
+				AD24F1BC1EAC0132007627BE /* Answer.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		AD67000D1EAC5FE50096303E /* ViewerTable */ = {
+			isa = PBXGroup;
+			children = (
+				AD67000A1EAC58550096303E /* ViewerInterfaceController.h */,
+				AD67000B1EAC58550096303E /* ViewerInterfaceController.m */,
+				AD67000E1EAC60040096303E /* tableRow.h */,
+				AD67000F1EAC60040096303E /* tableRow.m */,
+			);
+			name = ViewerTable;
+			sourceTree = "<group>";
+		};
+		AD6700111EAD160E0096303E /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				ADEFB09F1EA7DC8200A4D473 /* TimerInterfaceController.h */,
+				ADEFB0A01EA7DC8200A4D473 /* TimerInterfaceController.m */,
+				ADEFB0941EA7AECD00A4D473 /* TestPickerInterfaceController.h */,
+				ADEFB0951EA7AECD00A4D473 /* TestPickerInterfaceController.m */,
+			);
+			name = Pickers;
+			sourceTree = "<group>";
+		};
 		ADEFAFF81EA2C2EE00A4D473 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +324,10 @@
 		ADEFB0411EA2C2F100A4D473 /* FOUR WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AD24F1B61EA9AC1E007627BE /* ArtWork */,
+				AD67000D1EAC5FE50096303E /* ViewerTable */,
+				AD6700111EAD160E0096303E /* Pickers */,
+				AD24F1BA1EAC0105007627BE /* Data */,
 				ADEFB0441EA2C2F100A4D473 /* InterfaceController.h */,
 				ADEFB0451EA2C2F100A4D473 /* InterfaceController.m */,
 				ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */,
@@ -274,12 +338,8 @@
 				ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */,
 				ADEFB0471EA2C2F100A4D473 /* ExtensionDelegate.h */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
-				ADEFB09F1EA7DC8200A4D473 /* TimerInterfaceController.h */,
-				ADEFB0A01EA7DC8200A4D473 /* TimerInterfaceController.m */,
 				ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */,
 				ADEFB08F1EA70C3100A4D473 /* AAUserActivity.m */,
-				ADEFB0941EA7AECD00A4D473 /* TestPickerInterfaceController.h */,
-				ADEFB0951EA7AECD00A4D473 /* TestPickerInterfaceController.m */,
 				ADEFB0981EA7C40600A4D473 /* StaticticsInterfaceController.h */,
 				ADEFB0991EA7C40600A4D473 /* StaticticsInterfaceController.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
@@ -295,14 +355,6 @@
 		ADEFB0421EA2C2F100A4D473 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */,
-				ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */,
-				ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */,
-				ADEFB0B71EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png */,
-				ADEFB0B81EA80B6D00A4D473 /* Icon-HomeScreen-42mm-27.5x27.5@2x.png */,
-				ADEFB0B91EA80B6D00A4D473 /* Icon-HomeScreen-38mm-86x86@2x.png */,
-				ADEFB0BA1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png */,
-				ADEFB0BB1EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png */,
 				ADEFB0431EA2C2F100A4D473 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -507,6 +559,7 @@
 				ADEFB0BE1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png in Resources */,
 				ADEFB0C31EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png in Resources */,
 				ADEFB0BF1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png in Resources */,
+				AD24F1B51EA9AC18007627BE /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +599,15 @@
 				ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */,
 				ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */,
 				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
+				AD67000C1EAC58550096303E /* ViewerInterfaceController.m in Sources */,
 				ADEFB0C61EA80C3600A4D473 /* StartInterfaceController.m in Sources */,
 				ADEFB0A11EA7DC8200A4D473 /* TimerInterfaceController.m in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
 				ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */,
+				AD24F1BD1EAC0132007627BE /* Answer.m in Sources */,
 				ADEFB09A1EA7C40600A4D473 /* StaticticsInterfaceController.m in Sources */,
 				ADEFB0C91EA82F2400A4D473 /* UserChoiceController.m in Sources */,
+				AD6700101EAC60040096303E /* tableRow.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
 				ADEFB0961EA7AECD00A4D473 /* TestPickerInterfaceController.m in Sources */,
 			);
@@ -654,7 +710,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -696,7 +752,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos10.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

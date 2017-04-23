@@ -14,25 +14,75 @@
             <objects>
                 <controller title="Menu" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Start" id="UEy-DX-Tsn">
-                            <connections>
-                                <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Add Answer" id="3Pv-Sr-GCm">
-                            <connections>
-                                <segue destination="ZTi-0F-Llp" kind="push" identifier="AddAnswer" id="QyT-tT-pFV"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Statistics" id="pgB-2e-HMX">
-                            <connections>
-                                <segue destination="UvJ-OL-11N" kind="push" id="2vz-9J-Sow"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="1" alignment="left" animationDuration="1" layout="vertical" id="id3-3x-ICX">
+                            <items>
+                                <group width="1" height="0.5" alignment="left" id="pY0-6V-Rw6">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="Start" id="UEy-DX-Tsn">
+                                            <color key="backgroundColor" red="1" green="0.22137647867202759" blue="0.14142847061157227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="Setup Answer" id="3Pv-Sr-GCm">
+                                            <color key="backgroundColor" red="0.33829289674758911" green="0.31385087966918945" blue="0.8442198634147644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="ZTi-0F-Llp" kind="push" identifier="AddAnswer" id="QyT-tT-pFV"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="uzt-im-v7f">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="Learn" id="pgB-2e-HMX">
+                                            <color key="backgroundColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="K7A-Gp-hcf" kind="push" id="6Jv-bO-mcm"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="Goals" id="Myq-Ol-yPR">
+                                            <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="362"/>
+        </scene>
+        <!--Answer Viewer-->
+        <scene sceneID="cll-6x-zfl">
+            <objects>
+                <controller title="Answer Viewer" id="K7A-Gp-hcf" customClass="ViewerInterfaceController">
+                    <items>
+                        <table alignment="left" id="INh-YG-YgM">
+                            <items>
+                                <tableRow identifier="tableRow" id="Oid-p3-eha" customClass="tableRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="vI7-Gt-3xQ">
+                                        <items>
+                                            <label width="0.29999999999999999" alignment="left" verticalAlignment="center" text="P.1" numberOfLines="0" id="aOs-vq-lfB">
+                                                <color key="textColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="5Zg-qx-nk7"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="itemCaption" destination="aOs-vq-lfB" id="89P-8i-6ka"/>
+                                        <outlet property="itemLabel" destination="5Zg-qx-nk7" id="56l-eG-L85"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="viewerTable" destination="INh-YG-YgM" id="p4n-es-T2O"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="538" y="362"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -100,18 +150,22 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="515" y="839"/>
+            <point key="canvasLocation" x="515" y="861"/>
         </scene>
         <!--Set prep-->
         <scene sceneID="7eT-Ah-T1F">
             <objects>
                 <controller title="Set prep" id="oaH-pG-yKb" customClass="TestPickerInterfaceController">
                     <items>
-                        <picker width="1" height="1" alignment="left" indicatorMode="shownWhileFocused" id="Br2-5p-uRg">
-                            <connections>
-                                <action selector="testNumPickerAction:" destination="oaH-pG-yKb" id="AB6-FQ-WWW"/>
-                            </connections>
-                        </picker>
+                        <group width="1" height="1" alignment="left" id="6vD-Jh-s4f">
+                            <items>
+                                <picker width="1" height="1" alignment="left" focusStyle="stack" id="Br2-5p-uRg">
+                                    <connections>
+                                        <action selector="testNumPickerAction:" destination="oaH-pG-yKb" id="AB6-FQ-WWW"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="testNumPicker" destination="Br2-5p-uRg" id="kTH-Mc-Bhn"/>
@@ -125,22 +179,42 @@
             <objects>
                 <controller title="Start" id="CY4-Zl-u37" customClass="StartInterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Select prep" id="fyv-qM-Yog">
-                            <connections>
-                                <segue destination="oaH-pG-yKb" kind="modal" id="NMw-0y-w9b"/>
-                            </connections>
-                        </button>
-                        <button width="1" height="0.25" alignment="left" title="Timer" id="WAO-W3-yZe">
-                            <connections>
-                                <segue destination="ELZ-Yt-8Fn" kind="modal" id="9RU-8G-wc7"/>
-                            </connections>
-                        </button>
-                        <button width="1" height="0.25" alignment="left" title="Start" id="v4u-iT-nCz">
-                            <connections>
-                                <segue destination="ZTi-0F-Llp" kind="push" identifier="start" id="S1j-v7-4r3"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="1" alignment="left" animationDuration="1" layout="vertical" radius="20" id="9MF-Nj-GMx">
+                            <items>
+                                <group width="1" height="0.5" alignment="left" id="d5J-8Z-HuY">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="Set prep" id="fyv-qM-Yog">
+                                            <color key="backgroundColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="oaH-pG-yKb" kind="modal" id="NMw-0y-w9b"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="Timer" id="WAO-W3-yZe">
+                                            <color key="backgroundColor" red="0.0" green="0.46189910173416138" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="ELZ-Yt-8Fn" kind="modal" id="9RU-8G-wc7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="Ga0-9I-zIu">
+                                    <items>
+                                        <button width="1" height="1" alignment="left" title="Start" id="v4u-iT-nCz">
+                                            <color key="backgroundColor" red="1" green="0.22137647867202759" blue="0.14142847061157227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="ZTi-0F-Llp" kind="push" identifier="start" id="S1j-v7-4r3"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="preptestButton" destination="fyv-qM-Yog" id="28u-op-pBC"/>
+                        <outlet property="startButton" destination="v4u-iT-nCz" id="cpn-Rc-fGU"/>
+                        <outlet property="timerButton" destination="WAO-W3-yZe" id="kvm-oa-2JO"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-57" y="795"/>
@@ -187,11 +261,15 @@
             <objects>
                 <controller title="Set timer" id="ELZ-Yt-8Fn" customClass="TimerInterfaceController">
                     <items>
-                        <picker height="1" alignment="left" id="aFg-IR-ho6">
-                            <connections>
-                                <action selector="timerPickerAction:" destination="ELZ-Yt-8Fn" id="mZE-Gi-BPb"/>
-                            </connections>
-                        </picker>
+                        <group width="1" height="1" alignment="left" id="vtV-Wb-O2n">
+                            <items>
+                                <picker height="1" alignment="left" focusStyle="stack" id="aFg-IR-ho6">
+                                    <connections>
+                                        <action selector="timerPickerAction:" destination="ELZ-Yt-8Fn" id="mZE-Gi-BPb"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="timerPicker" destination="aFg-IR-ho6" id="8r8-9t-Swe"/>
@@ -243,29 +321,34 @@
                                         <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="BXU-dg-grg"/>
                                     </items>
                                 </group>
-                                <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" id="aIK-fM-g5W">
+                                <group width="0.25" height="0.84999999999999998" alignment="left" verticalAlignment="bottom" layout="vertical" id="aIK-fM-g5W">
                                     <items>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="A" id="wNV-WE-rtW">
+                                            <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="selectA" destination="ZTi-0F-Llp" id="cbi-KL-a9C"/>
                                             </connections>
                                         </button>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="B" id="IRQ-bT-yBt">
+                                            <color key="backgroundColor" red="1" green="0.80570739507675171" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="selectB" destination="ZTi-0F-Llp" id="R3V-Ua-HLg"/>
                                             </connections>
                                         </button>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="C" id="9jB-Wn-p9W">
+                                            <color key="backgroundColor" red="0.32893285155296326" green="0.7812531590461731" blue="0.98977404832839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="selectC" destination="ZTi-0F-Llp" id="1hd-Fx-BSg"/>
                                             </connections>
                                         </button>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="D" id="a9H-DX-Ygy">
+                                            <color key="backgroundColor" red="1" green="0.15648800134658813" blue="0.31711667776107788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="selectD" destination="ZTi-0F-Llp" id="WCR-1K-HrP"/>
                                             </connections>
                                         </button>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="E" id="gyU-Ic-D48">
+                                            <color key="backgroundColor" red="0.34219309687614441" green="0.317646324634552" blue="0.85217070579528809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="selectE" destination="ZTi-0F-Llp" id="bQV-R3-l3T"/>
                                             </connections>
@@ -298,7 +381,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="NMw-0y-w9b"/>
         <segue reference="S1j-v7-4r3"/>
-        <segue reference="RYX-uo-jFw"/>
     </inferredMetricsTieBreakers>
 </document>

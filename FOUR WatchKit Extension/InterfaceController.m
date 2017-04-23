@@ -79,7 +79,7 @@
 
 - (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier{
 	
-	if ([segueIdentifier isEqualToString:@"AnnAnswer"]) {
+	if ([segueIdentifier isEqualToString:@"AddAnswer"]) {
 		_appDelegate.userChoice.isTrueAnswerInput = YES;
 	} else {
 		_appDelegate.userChoice.isTrueAnswerInput = NO;

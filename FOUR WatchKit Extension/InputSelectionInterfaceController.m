@@ -8,6 +8,7 @@
 
 #import "InputSelectionInterfaceController.h"
 #import "ExtensionDelegate.h"
+#import "Data.h"
 
 @interface InputSelectionInterfaceController ()
 
@@ -87,36 +88,55 @@
 	[_secNumLabel setText:[NSString stringWithFormat: @"S.%d", _delegate.userChoice.secNumCurrent]];
 }
 
-- (void) saveChosenAnswer:(int16_t)Answer{
+- (void) saveChosenAnswer:(NSInteger)a question:(NSInteger)q section:(NSInteger)s prepTest:(NSInteger)p isTrueAnswer: (BOOL)t{
+	
+	NSString* entityName;
+	
+	if (t) {
+		entityName = @"ANSWER";
+	} else {
+		entityName = @"USERANSWER";
+	}
+	
+	Answer* oneAnswer = [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:_delegate.persistentContainer.viewContext];
+	
+	[oneAnswer setAnswer:a];
+	[oneAnswer setQuestion:q];
+	[oneAnswer setSection:s];
+	[oneAnswer setPreptest:p];
+	
+	[_delegate saveChanges];
 	
 }
 
 -(IBAction)selectA{
-	[self saveChosenAnswer:1];
+	[self saveChosenAnswer:1 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
+	
 }
 -(IBAction)selectB{
-	[self saveChosenAnswer:2];
+	[self saveChosenAnswer:2 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectC{
-	[self saveChosenAnswer:3];
+	[self saveChosenAnswer:3 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectD{
-	[self saveChosenAnswer:4];
+	[self saveChosenAnswer:4 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectE{
-	[self saveChosenAnswer:5];
+	[self saveChosenAnswer:5 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];

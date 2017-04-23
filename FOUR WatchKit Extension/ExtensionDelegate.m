@@ -82,5 +82,20 @@
 	return self.persistentContainer;
 }
 
+- (void) saveChanges{
+	
+	NSManagedObjectContext* task = self.persistentContainer.viewContext;
+	
+	if (task.hasChanges) {
+		NSError* error;
+		
+		if (![task save:&error]) {
+			abort();
+		}
+
+	}
+
+}
+
 
 @end

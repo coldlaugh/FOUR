@@ -18,4 +18,6 @@
 
 @property(class, readonly, strong) NSRunLoop *currentRunLoop;
 
+- (void) saveChanges;
+
 @end
