@@ -53,7 +53,9 @@
 	_delegate.userChoice.secNumCurrent = 1;
 	[self upDateLabels];
 	
-	if (context != nil) {
+    NSString* contextString = (NSString*) context;
+    
+	if ([contextString isEqualToString:@"AddAnswer"]) {
 			[_selectPrepButton setHidden:NO];
 			[_pauseButton setHidden:YES];
 			[_startButton setHidden:YES];
@@ -111,13 +113,15 @@
 	[_secNumLabel setText:[NSString stringWithFormat: @"S.%d", _delegate.userChoice.secNumCurrent]];
 }
 
-- (void) saveChosenAnswer:(NSInteger)a question:(NSInteger)q section:(NSInteger)s prepTest:(NSInteger)p isTrueAnswer: (BOOL)t{
+- (void) saveChosenAnswer:(NSInteger)a question:(NSInteger)q section:(NSInteger)s prepTest:(NSInteger)p isTrueAnswer: (BOOL)t isUserLearning:(BOOL)l {
 	
 	NSString* entityName;
 	
+
 	if (t) {
 		entityName = @"ANSWER";
-	} else {
+    }
+    else {
 		entityName = @"USERANSWER";
 	}
 	
@@ -133,7 +137,7 @@
 }
 
 -(IBAction)selectA{
-	[self saveChosenAnswer:1 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	[self saveChosenAnswer:1 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput isUserLearning: _delegate.userChoice.isUserLearning];
 	
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
@@ -141,25 +145,25 @@
 	
 }
 -(IBAction)selectB{
-	[self saveChosenAnswer:2 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	[self saveChosenAnswer:2 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput isUserLearning: _delegate.userChoice.isUserLearning];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectC{
-	[self saveChosenAnswer:3 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	[self saveChosenAnswer:3 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput isUserLearning: _delegate.userChoice.isUserLearning];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectD{
-	[self saveChosenAnswer:4 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	[self saveChosenAnswer:4 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput isUserLearning: _delegate.userChoice.isUserLearning];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];
 }
 -(IBAction)selectE{
-	[self saveChosenAnswer:5 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput];
+	[self saveChosenAnswer:5 question:_delegate.userChoice.quesNumCurrent section:_delegate.userChoice.secNumCurrent prepTest:_delegate.userChoice.testNumChosen isTrueAnswer:_delegate.userChoice.isTrueAnswerInput isUserLearning: _delegate.userChoice.isUserLearning];
 	_quesNumPrev = _delegate.userChoice.quesNumCurrent;
 	_delegate.userChoice.quesNumCurrent++;
 	[self upDateLabels];

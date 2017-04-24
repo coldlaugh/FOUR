@@ -81,9 +81,14 @@
 	
 	if ([segueIdentifier isEqualToString:@"AddAnswer"]) {
 		_appDelegate.userChoice.isTrueAnswerInput = YES;
-	} else {
+        _appDelegate.userChoice.isUserLearning = NO;
+	} else if ([segueIdentifier isEqualToString:@"Learn"]){
 		_appDelegate.userChoice.isTrueAnswerInput = NO;
-	}
+        _appDelegate.userChoice.isUserLearning = YES;
+    } else {
+        _appDelegate.userChoice.isTrueAnswerInput = NO;
+        _appDelegate.userChoice.isUserLearning = NO;
+    }
 	
 	return segueIdentifier;
 	

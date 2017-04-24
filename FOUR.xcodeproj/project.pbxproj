@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD24F1B51EA9AC18007627BE /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD24F1B41EA9AC18007627BE /* 1.png */; };
 		AD24F1BD1EAC0132007627BE /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24F1BC1EAC0132007627BE /* Answer.m */; };
+		AD302E2B1EAD8AFD00FD6B8F /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = AD302E2A1EAD8AFD00FD6B8F /* checkMark.png */; };
 		AD67000C1EAC58550096303E /* ViewerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000B1EAC58550096303E /* ViewerInterfaceController.m */; };
 		AD6700101EAC60040096303E /* tableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000F1EAC60040096303E /* tableRow.m */; };
 		ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */; };
@@ -106,6 +107,7 @@
 		AD24F1BB1EAC0132007627BE /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
 		AD24F1BC1EAC0132007627BE /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 		AD24F1BE1EAC01C6007627BE /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		AD302E2A1EAD8AFD00FD6B8F /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
 		AD67000A1EAC58550096303E /* ViewerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerInterfaceController.h; sourceTree = "<group>"; };
 		AD67000B1EAC58550096303E /* ViewerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewerInterfaceController.m; sourceTree = "<group>"; };
 		AD67000E1EAC60040096303E /* tableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableRow.h; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		AD24F1B61EA9AC1E007627BE /* ArtWork */ = {
 			isa = PBXGroup;
 			children = (
+				AD302E2A1EAD8AFD00FD6B8F /* checkMark.png */,
 				ADEFB0B41EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@3x.png */,
 				ADEFB0B51EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png */,
 				ADEFB0B61EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png */,
@@ -557,6 +560,7 @@
 				ADEFB0C21EA80B6D00A4D473 /* Icon-HomeScreen-38mm-40x40@2x.png in Resources */,
 				ADEFB0BD1EA80B6D00A4D473 /* Icon-HomeScreen-Companion-29x29@2x.png in Resources */,
 				ADEFB0BE1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-98x98@2x.png in Resources */,
+				AD302E2B1EAD8AFD00FD6B8F /* checkMark.png in Resources */,
 				ADEFB0C31EA80B6D00A4D473 /* Icon-HomeScreen-38mm-24x24@2x.png in Resources */,
 				ADEFB0BF1EA80B6D00A4D473 /* Icon-HomeScreen-42mm-44x44@2x.png in Resources */,
 				AD24F1B51EA9AC18007627BE /* 1.png in Resources */,

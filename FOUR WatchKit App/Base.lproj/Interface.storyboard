@@ -37,11 +37,14 @@
                                         <button width="0.5" height="1" alignment="left" title="Learn" id="pgB-2e-HMX">
                                             <color key="backgroundColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="K7A-Gp-hcf" kind="push" id="6Jv-bO-mcm"/>
+                                                <segue destination="ZTi-0F-Llp" kind="push" identifier="Learn" id="SqL-IM-WbH"/>
                                             </connections>
                                         </button>
                                         <button width="0.5" height="1" alignment="left" title="Goals" id="Myq-Ol-yPR">
                                             <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="K7A-Gp-hcf" kind="push" id="qaW-7E-oON"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -150,7 +153,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="515" y="861"/>
+            <point key="canvasLocation" x="689" y="869"/>
         </scene>
         <!--Set prep-->
         <scene sceneID="7eT-Ah-T1F">
@@ -319,6 +322,16 @@
                                             </connections>
                                         </button>
                                         <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="BXU-dg-grg"/>
+                                        <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="Show" id="UAg-pB-6Il"/>
+                                        <group width="0.80000000000000004" alignment="center" hidden="YES" id="VTW-KA-42g">
+                                            <items>
+                                                <imageView width="0.34999999999999998" height="1" alignment="left" image="checkMark" contentMode="scaleAspectFit" id="Rot-9f-dwN"/>
+                                                <label alignment="center" text="5" id="iQ0-Tn-4Tg" userLabel="5">
+                                                    <color key="textColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label alignment="center" verticalAlignment="center" text="/14" id="vl0-8b-Rh4" userLabel="/14"/>
+                                            </items>
+                                        </group>
                                     </items>
                                 </group>
                                 <group width="0.25" height="0.84999999999999998" alignment="left" verticalAlignment="bottom" layout="vertical" id="aIK-fM-g5W">
@@ -375,7 +388,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="795"/>
+            <point key="canvasLocation" x="246" y="795"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
@@ -386,7 +399,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QyT-tT-pFV"/>
+        <segue reference="SqL-IM-WbH"/>
         <segue reference="RYX-uo-jFw"/>
     </inferredMetricsTieBreakers>
 </document>

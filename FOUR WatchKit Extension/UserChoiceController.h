@@ -17,5 +17,6 @@
 @property (nonatomic) NSInteger quesNumCurrent;
 @property (nonatomic) NSInteger secNumCurrent;
 @property (nonatomic) BOOL isTrueAnswerInput;
+@property (nonatomic) BOOL isUserLearning;
 
 @end
