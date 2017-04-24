@@ -37,8 +37,8 @@
 	
 	for (int prep = 1; prep < 10; prep++) {
 		for (int sec = 1; sec < 5; sec++) {
-//			NSPredicate* predicate = [NSPredicate predicateWithFormat:@"(preptest == %@) && (section == %@)",prep,sec];
-//			[request setPredicate:predicate];
+			NSPredicate* predicate = [NSPredicate predicateWithFormat:@"(preptest == %d) && (section == %d)",prep,sec];
+			[request setPredicate:predicate];
 			_result = [_delegate.persistentContainer.viewContext executeFetchRequest:request error:&error];
 			if (error == nil & _result.count>0) {
 				
@@ -61,8 +61,6 @@
 		tableRow* row = [_viewerTable rowControllerAtIndex:i];
 		[row.itemLabel setText:textArray[i]];
 		[row.itemCaption setText:captionArray[i]];
-//		free((__bridge void *)(textArray[rowCount]));
-//		free((__bridge void *)(captionArray[rowCount]));
 	}
 	
 	

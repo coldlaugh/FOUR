@@ -73,6 +73,8 @@
 
 - (IBAction)testNumPickerAction:(NSInteger)index{
 	_appDelegate.userChoice.testNumChosen = index;
+    _appDelegate.userChoice.secNumCurrent = 1;
+    _appDelegate.userChoice.quesNumCurrent = 1;
 }
 
 

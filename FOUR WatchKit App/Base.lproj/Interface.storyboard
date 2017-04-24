@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
@@ -313,7 +313,7 @@
                                                 <action selector="selectPause" destination="ZTi-0F-Llp" id="fv1-s8-faS"/>
                                             </connections>
                                         </button>
-                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Pause" id="0mN-Tb-4hO">
+                                        <button width="0.80000000000000004" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="Start" id="0mN-Tb-4hO">
                                             <connections>
                                                 <action selector="selectStart" destination="ZTi-0F-Llp" id="4BP-wf-TMZ"/>
                                             </connections>
@@ -359,6 +359,11 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="answerButtonA" destination="wNV-WE-rtW" id="Rgb-mk-Y1e"/>
+                        <outlet property="answerButtonB" destination="IRQ-bT-yBt" id="Ez0-Ko-Jbv"/>
+                        <outlet property="answerButtonC" destination="9jB-Wn-p9W" id="ai5-Gj-3L8"/>
+                        <outlet property="answerButtonD" destination="a9H-DX-Ygy" id="MbH-d1-hx4"/>
+                        <outlet property="answerButtonE" destination="gyU-Ic-D48" id="Fg1-tm-kdU"/>
                         <outlet property="nextSectionButton" destination="Os9-z2-rA2" id="BIK-cf-kVi"/>
                         <outlet property="pauseButton" destination="z0a-p1-Vg5" id="j3h-fC-Wai"/>
                         <outlet property="quesNumLabel" destination="qx9-9a-9Yg" id="7iV-Zh-yxc"/>
@@ -381,7 +386,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NMw-0y-w9b"/>
-        <segue reference="S1j-v7-4r3"/>
+        <segue reference="QyT-tT-pFV"/>
+        <segue reference="RYX-uo-jFw"/>
     </inferredMetricsTieBreakers>
 </document>

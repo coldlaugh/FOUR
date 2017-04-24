@@ -14,6 +14,8 @@
 
 @property ExtensionDelegate* delegate;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceButton* answerButtonA, *answerButtonB, *answerButtonC, *answerButtonD, *answerButtonE;
+
 @property (weak, nonatomic) IBOutlet WKInterfaceButton* selectPrepButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton* nextSectionButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton* undoButton;
@@ -21,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceTimer* timer;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel* quesNumLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel* secNumLabel;
+
+@property NSDate* timerStart, *timerStop;
 
 
 -(IBAction)selectA;
@@ -65,7 +69,9 @@
 		if (_delegate.userChoice.isTimerEnabled) {
 			[_pauseButton setHidden:NO];
 			[_timer setHidden:NO];
-			[_timer setDate: [NSDate dateWithTimeIntervalSinceNow:_delegate.userChoice.timeSecond]];
+            _timerStop = [NSDate dateWithTimeIntervalSinceNow:_delegate.userChoice.timeSecond];
+            _timerStart = [NSDate dateWithTimeIntervalSinceNow:0];
+			[_timer setDate: _timerStop];
 			[_timer start];
 		}
 		
@@ -76,6 +82,23 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    if (_delegate.userChoice.testNumChosen > 0) {
+        [_selectPrepButton setTitle:[NSString stringWithFormat:@"prep %d",_delegate.userChoice.testNumChosen]];
+        [_answerButtonA setEnabled:YES];
+        [_answerButtonB setEnabled:YES];
+        [_answerButtonC setEnabled:YES];
+        [_answerButtonD setEnabled:YES];
+        [_answerButtonE setEnabled:YES];
+        
+    } else {
+        [_selectPrepButton setTitle:@"Select prep test"];
+        [_answerButtonA setEnabled:NO];
+        [_answerButtonB setEnabled:NO];
+        [_answerButtonC setEnabled:NO];
+        [_answerButtonD setEnabled:NO];
+        [_answerButtonE setEnabled:NO];
+    }
 }
 
 - (void)didDeactivate {
@@ -157,7 +180,8 @@
 }
 -(IBAction)selectPause{
 	if (_delegate.userChoice.isTimerEnabled) {
-		[_timer stop];
+        [_timer stop];
+        _timerStart = [NSDate dateWithTimeIntervalSinceNow:0];
 		[_pauseButton setHidden:YES];
 		[_startButton setHidden:NO];
 	}
@@ -165,7 +189,15 @@
 
 -(IBAction)selectStart{
 	if (_delegate.userChoice.isTimerEnabled) {
+        
+        _timerStop = [_timerStop dateByAddingTimeInterval:
+                      [[NSDate dateWithTimeIntervalSinceNow:0] timeIntervalSinceDate:_timerStart]
+                      ];
+        
+        [_timer setDate: _timerStop];
+        
 		[_timer start];
+        
 		[_pauseButton setHidden:NO];
 		[_startButton setHidden:YES];
 	}
