@@ -92,9 +92,9 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="center" text="Timer has run up!" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="timerCatagory" wantsSashBlur="YES" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
@@ -222,7 +222,7 @@
                                         <button width="1" height="1" alignment="left" title="Start" id="v4u-iT-nCz">
                                             <color key="backgroundColor" red="1" green="0.22137647867202759" blue="0.14142847061157227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="ZTi-0F-Llp" kind="push" identifier="start" id="S1j-v7-4r3"/>
+                                                <segue destination="ZTi-0F-Llp" kind="push" identifier="Start" id="S1j-v7-4r3"/>
                                             </connections>
                                         </button>
                                     </items>
@@ -357,7 +357,7 @@
                                         </group>
                                     </items>
                                 </group>
-                                <group width="0.25" height="0.84999999999999998" alignment="left" verticalAlignment="bottom" layout="vertical" id="aIK-fM-g5W">
+                                <group width="0.29999999999999999" height="0.90000000000000002" alignment="left" verticalAlignment="bottom" layout="vertical" id="aIK-fM-g5W">
                                     <items>
                                         <button width="1" height="0.20000000000000001" alignment="left" title="A" id="wNV-WE-rtW">
                                             <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -427,7 +427,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SqL-IM-WbH"/>
         <segue reference="RYX-uo-jFw"/>
+        <segue reference="S1j-v7-4r3"/>
     </inferredMetricsTieBreakers>
 </document>

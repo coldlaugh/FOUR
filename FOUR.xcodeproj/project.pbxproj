@@ -24,10 +24,10 @@
 		ADEFB0141EA2C2EF00A4D473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0121EA2C2EF00A4D473 /* LaunchScreen.storyboard */; };
 		ADEFB01F1EA2C2F000A4D473 /* FOURTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB01E1EA2C2F000A4D473 /* FOURTests.m */; };
 		ADEFB02A1EA2C2F000A4D473 /* FOURUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0291EA2C2F000A4D473 /* FOURUITests.m */; };
-		ADEFB02F1EA2C2F000A4D473 /* FOUR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ADEFB02E1EA2C2F000A4D473 /* FOUR WatchKit App.app */; };
+		ADEFB02F1EA2C2F000A4D473 /* LSATPREP Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ADEFB02E1EA2C2F000A4D473 /* LSATPREP Watch App.app */; };
 		ADEFB0351EA2C2F000A4D473 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0331EA2C2F000A4D473 /* Interface.storyboard */; };
 		ADEFB0371EA2C2F000A4D473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEFB0361EA2C2F000A4D473 /* Assets.xcassets */; };
-		ADEFB03E1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADEFB03D1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADEFB03E1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADEFB03D1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0451EA2C2F100A4D473 /* InterfaceController.m */; };
 		ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */; };
 		ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */; };
@@ -87,7 +87,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				ADEFB03E1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex in Embed App Extensions */,
+				ADEFB03E1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +98,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				ADEFB02F1EA2C2F000A4D473 /* FOUR WatchKit App.app in Embed Watch Content */,
+				ADEFB02F1EA2C2F000A4D473 /* LSATPREP Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +121,7 @@
 		AD67000F1EAC60040096303E /* tableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableRow.m; sourceTree = "<group>"; };
 		ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSelectionInterfaceController.h; sourceTree = "<group>"; };
 		ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSelectionInterfaceController.m; sourceTree = "<group>"; };
-		ADEFB0011EA2C2EE00A4D473 /* FOUR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOUR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEFB0011EA2C2EE00A4D473 /* LSATPREP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSATPREP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEFB0051EA2C2EF00A4D473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADEFB0071EA2C2EF00A4D473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADEFB0081EA2C2EF00A4D473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,11 +137,11 @@
 		ADEFB0251EA2C2F000A4D473 /* FOURUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOURUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEFB0291EA2C2F000A4D473 /* FOURUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOURUITests.m; sourceTree = "<group>"; };
 		ADEFB02B1EA2C2F000A4D473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADEFB02E1EA2C2F000A4D473 /* FOUR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FOUR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEFB02E1EA2C2F000A4D473 /* LSATPREP Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LSATPREP Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEFB0341EA2C2F000A4D473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		ADEFB0361EA2C2F000A4D473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEFB0381EA2C2F000A4D473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADEFB03D1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FOUR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEFB03D1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LSATPREP Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEFB0431EA2C2F100A4D473 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		ADEFB0441EA2C2F100A4D473 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
 		ADEFB0451EA2C2F100A4D473 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
@@ -273,11 +273,11 @@
 		ADEFB0021EA2C2EE00A4D473 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFB0011EA2C2EE00A4D473 /* FOUR.app */,
+				ADEFB0011EA2C2EE00A4D473 /* LSATPREP.app */,
 				ADEFB01A1EA2C2EF00A4D473 /* FOURTests.xctest */,
 				ADEFB0251EA2C2F000A4D473 /* FOURUITests.xctest */,
-				ADEFB02E1EA2C2F000A4D473 /* FOUR WatchKit App.app */,
-				ADEFB03D1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex */,
+				ADEFB02E1EA2C2F000A4D473 /* LSATPREP Watch App.app */,
+				ADEFB03D1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,9 +377,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADEFB0001EA2C2EE00A4D473 /* FOUR */ = {
+		ADEFB0001EA2C2EE00A4D473 /* LSATPREP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADEFB05A1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR" */;
+			buildConfigurationList = ADEFB05A1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP" */;
 			buildPhases = (
 				ADEFAFFD1EA2C2EE00A4D473 /* Sources */,
 				ADEFAFFE1EA2C2EE00A4D473 /* Frameworks */,
@@ -391,9 +391,9 @@
 			dependencies = (
 				ADEFB0311EA2C2F000A4D473 /* PBXTargetDependency */,
 			);
-			name = FOUR;
+			name = LSATPREP;
 			productName = FOUR;
-			productReference = ADEFB0011EA2C2EE00A4D473 /* FOUR.app */;
+			productReference = ADEFB0011EA2C2EE00A4D473 /* LSATPREP.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ADEFB0191EA2C2EF00A4D473 /* FOURTests */ = {
@@ -432,9 +432,9 @@
 			productReference = ADEFB0251EA2C2F000A4D473 /* FOURUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		ADEFB02D1EA2C2F000A4D473 /* FOUR WatchKit App */ = {
+		ADEFB02D1EA2C2F000A4D473 /* LSATPREP Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADEFB0561EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR WatchKit App" */;
+			buildConfigurationList = ADEFB0561EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP Watch App" */;
 			buildPhases = (
 				ADEFB02C1EA2C2F000A4D473 /* Resources */,
 				ADEFB0551EA2C2F100A4D473 /* Embed App Extensions */,
@@ -444,14 +444,14 @@
 			dependencies = (
 				ADEFB0401EA2C2F100A4D473 /* PBXTargetDependency */,
 			);
-			name = "FOUR WatchKit App";
+			name = "LSATPREP Watch App";
 			productName = "FOUR WatchKit App";
-			productReference = ADEFB02E1EA2C2F000A4D473 /* FOUR WatchKit App.app */;
+			productReference = ADEFB02E1EA2C2F000A4D473 /* LSATPREP Watch App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		ADEFB03C1EA2C2F100A4D473 /* FOUR WatchKit Extension */ = {
+		ADEFB03C1EA2C2F100A4D473 /* LSATPREP Watch Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADEFB0521EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR WatchKit Extension" */;
+			buildConfigurationList = ADEFB0521EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP Watch Extension" */;
 			buildPhases = (
 				ADEFB0391EA2C2F100A4D473 /* Sources */,
 				ADEFB03A1EA2C2F100A4D473 /* Frameworks */,
@@ -461,9 +461,9 @@
 			);
 			dependencies = (
 			);
-			name = "FOUR WatchKit Extension";
+			name = "LSATPREP Watch Extension";
 			productName = "FOUR WatchKit Extension";
-			productReference = ADEFB03D1EA2C2F100A4D473 /* FOUR WatchKit Extension.appex */;
+			productReference = ADEFB03D1EA2C2F100A4D473 /* LSATPREP Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -517,11 +517,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADEFB0001EA2C2EE00A4D473 /* FOUR */,
+				ADEFB0001EA2C2EE00A4D473 /* LSATPREP */,
 				ADEFB0191EA2C2EF00A4D473 /* FOURTests */,
 				ADEFB0241EA2C2F000A4D473 /* FOURUITests */,
-				ADEFB02D1EA2C2F000A4D473 /* FOUR WatchKit App */,
-				ADEFB03C1EA2C2F100A4D473 /* FOUR WatchKit Extension */,
+				ADEFB02D1EA2C2F000A4D473 /* LSATPREP Watch App */,
+				ADEFB03C1EA2C2F100A4D473 /* LSATPREP Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -636,22 +636,22 @@
 /* Begin PBXTargetDependency section */
 		ADEFB01C1EA2C2EF00A4D473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADEFB0001EA2C2EE00A4D473 /* FOUR */;
+			target = ADEFB0001EA2C2EE00A4D473 /* LSATPREP */;
 			targetProxy = ADEFB01B1EA2C2EF00A4D473 /* PBXContainerItemProxy */;
 		};
 		ADEFB0271EA2C2F000A4D473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADEFB0001EA2C2EE00A4D473 /* FOUR */;
+			target = ADEFB0001EA2C2EE00A4D473 /* LSATPREP */;
 			targetProxy = ADEFB0261EA2C2F000A4D473 /* PBXContainerItemProxy */;
 		};
 		ADEFB0311EA2C2F000A4D473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADEFB02D1EA2C2F000A4D473 /* FOUR WatchKit App */;
+			target = ADEFB02D1EA2C2F000A4D473 /* LSATPREP Watch App */;
 			targetProxy = ADEFB0301EA2C2F000A4D473 /* PBXContainerItemProxy */;
 		};
 		ADEFB0401EA2C2F100A4D473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADEFB03C1EA2C2F100A4D473 /* FOUR WatchKit Extension */;
+			target = ADEFB03C1EA2C2F100A4D473 /* LSATPREP Watch Extension */;
 			targetProxy = ADEFB03F1EA2C2F100A4D473 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -935,7 +935,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADEFB0521EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR WatchKit Extension" */ = {
+		ADEFB0521EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP Watch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADEFB0531EA2C2F100A4D473 /* Debug */,
@@ -944,7 +944,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADEFB0561EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR WatchKit App" */ = {
+		ADEFB0561EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADEFB0571EA2C2F100A4D473 /* Debug */,
@@ -953,7 +953,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADEFB05A1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "FOUR" */ = {
+		ADEFB05A1EA2C2F100A4D473 /* Build configuration list for PBXNativeTarget "LSATPREP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADEFB05B1EA2C2F100A4D473 /* Debug */,

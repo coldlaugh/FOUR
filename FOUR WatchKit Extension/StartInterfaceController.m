@@ -64,6 +64,38 @@
 //	if ([segueIdentifier isEqualToString:@"start"]) {
 //		_appDelegate.userChoice.timer = [NSTimer scheduledTimerWithTimeInterval:_appDelegate.userChoice.timeSecond invocation:invocation repeats:NO];
 //	}
+    
+    // schedule timer notification
+    
+    if ([segueIdentifier isEqualToString:@"Start"] & _appDelegate.userChoice.isTimerEnabled) {
+        
+        
+        
+        
+        UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
+        content.title = [NSString localizedUserNotificationStringForKey:[NSString stringWithFormat: @"Your prep %d timer has finished",_appDelegate.userChoice.testNumChosen] arguments:nil];
+        content.sound = [UNNotificationSound defaultSound];
+        
+        content.categoryIdentifier = @"timerCatagory";
+        
+        UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:_appDelegate.userChoice.timeSecond repeats:NO];
+        
+        UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier: @"PrepTimer" content:content trigger:trigger];
+        
+        UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+        
+        [center removePendingNotificationRequestsWithIdentifiers:@[@"PrepTimer"]];
+    
+        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            if (error != nil){
+                abort();
+            }
+        }];
+        
+        
+        
+    }
+    
 	return nil;
 }
 

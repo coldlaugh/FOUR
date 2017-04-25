@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-               BuildableName = "FOUR WatchKit App.app"
-               BlueprintName = "FOUR WatchKit App"
+               BuildableName = "LSATPREP Watch App.app"
+               BlueprintName = "LSATPREP Watch App"
                ReferencedContainer = "container:FOUR.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ADEFB0001EA2C2EE00A4D473"
-               BuildableName = "FOUR.app"
-               BlueprintName = "FOUR"
+               BuildableName = "LSATPREP.app"
+               BlueprintName = "LSATPREP"
                ReferencedContainer = "container:FOUR.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-            BuildableName = "FOUR WatchKit App.app"
-            BlueprintName = "FOUR WatchKit App"
+            BuildableName = "LSATPREP Watch App.app"
+            BlueprintName = "LSATPREP Watch App"
             ReferencedContainer = "container:FOUR.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,7 +64,8 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      notificationPayloadFile = "FOUR WatchKit Extension/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
@@ -72,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-            BuildableName = "FOUR WatchKit App.app"
-            BlueprintName = "FOUR WatchKit App"
+            BuildableName = "LSATPREP Watch App.app"
+            BlueprintName = "LSATPREP Watch App"
             ReferencedContainer = "container:FOUR.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -81,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-            BuildableName = "FOUR WatchKit App.app"
-            BlueprintName = "FOUR WatchKit App"
+            BuildableName = "LSATPREP Watch App.app"
+            BlueprintName = "LSATPREP Watch App"
             ReferencedContainer = "container:FOUR.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -102,8 +103,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-            BuildableName = "FOUR WatchKit App.app"
-            BlueprintName = "FOUR WatchKit App"
+            BuildableName = "LSATPREP Watch App.app"
+            BlueprintName = "LSATPREP Watch App"
             ReferencedContainer = "container:FOUR.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -111,8 +112,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEFB02D1EA2C2F000A4D473"
-            BuildableName = "FOUR WatchKit App.app"
-            BlueprintName = "FOUR WatchKit App"
+            BuildableName = "LSATPREP Watch App.app"
+            BlueprintName = "LSATPREP Watch App"
             ReferencedContainer = "container:FOUR.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

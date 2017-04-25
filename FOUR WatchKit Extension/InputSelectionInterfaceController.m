@@ -182,7 +182,7 @@
 	[_quesNumLabel setText:[NSString stringWithFormat: @"Q.%d", delegate.userChoice.quesNumCurrent]];
 	[_secNumLabel setText:[NSString stringWithFormat: @"S.%d", delegate.userChoice.secNumCurrent]];
     if (delegate.userChoice.isUserLearning) {
-        [_learnLabel setText:[NSString stringWithFormat:@"%d+",learnCount]];
+        [_learnLabel setText:[NSString stringWithFormat:@"%d + ",learnCount]];
     }
     
 }
@@ -216,7 +216,7 @@
     
     // save answer to database
     
-    
+
     
     // if learning, compare with correct answer,
     // correct -> next question & show congrat page
@@ -231,16 +231,18 @@
         
         NSInteger trueAnswer = n.integerValue;
         if (trueAnswer == answer) {
+            [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeNotification];
             [self saveChosenAnswer: answer question:delegate.userChoice.quesNumCurrent section:delegate.userChoice.secNumCurrent prepTest:delegate.userChoice.testNumChosen isTrueAnswer:delegate.userChoice.isTrueAnswerInput isUserLearning: delegate.userChoice.isUserLearning];
             learnCount ++;
             [self nextQuestion];
         }else{
-            
+            [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeClick]; // click to indicate input finished
         }
         
         
     } else {
         // update to next question
+        [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeClick]; // click to indicate input finished
         [self saveChosenAnswer: answer question:delegate.userChoice.quesNumCurrent section:delegate.userChoice.secNumCurrent prepTest:delegate.userChoice.testNumChosen isTrueAnswer:delegate.userChoice.isTrueAnswerInput isUserLearning: delegate.userChoice.isUserLearning];
         [self nextQuestion];
     }

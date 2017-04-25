@@ -10,6 +10,7 @@
 #import "ExtensionDelegate.h"
 #import "AAUserActivity.h"
 
+
 @interface InterfaceController ()
 
 
@@ -36,8 +37,24 @@
 	_sliderValue = 0.0;
 	
 	_appDelegate = (ExtensionDelegate*) [WKExtension sharedExtension].delegate;
-	
-	
+    
+    
+    UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+
+    
+    [center requestAuthorizationWithOptions: UNAuthorizationOptionSound
+                          completionHandler:^(BOOL granted, NSError * _Nullable error) {
+                          }];
+    [center requestAuthorizationWithOptions: UNAuthorizationOptionAlert
+                          completionHandler:^(BOOL granted, NSError * _Nullable error) {
+                          }];
+    
+    UNNotificationAction* action = [UNNotificationAction actionWithIdentifier:@"alertAction" title:@"Timer has run up" options:UNNotificationActionOptionForeground];
+    UNNotificationCategory* catagory = [UNNotificationCategory categoryWithIdentifier:@"timerCatagory" actions:@[action] intentIdentifiers:@[@"timerIndent"] options:UNNotificationCategoryOptionCustomDismissAction];
+    
+    [center setNotificationCategories:[NSSet setWithObjects:catagory, nil]];
+    
+    
 }
 
 - (void)willActivate {
