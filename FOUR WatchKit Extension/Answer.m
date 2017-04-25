@@ -14,5 +14,6 @@
 @dynamic preptest;
 @dynamic question;
 @dynamic section;
+@dynamic time;
 
 @end

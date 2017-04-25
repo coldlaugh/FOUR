@@ -10,6 +10,9 @@
 		AD24F1B51EA9AC18007627BE /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD24F1B41EA9AC18007627BE /* 1.png */; };
 		AD24F1BD1EAC0132007627BE /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24F1BC1EAC0132007627BE /* Answer.m */; };
 		AD302E2B1EAD8AFD00FD6B8F /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = AD302E2A1EAD8AFD00FD6B8F /* checkMark.png */; };
+		AD302E2E1EAE496400FD6B8F /* FREQDATA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD302E2C1EAE496400FD6B8F /* FREQDATA.xcdatamodeld */; };
+		AD302E301EAE498700FD6B8F /* ModelMAPPING.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = AD302E2F1EAE498700FD6B8F /* ModelMAPPING.xcmappingmodel */; };
+		AD448D031EAFD75B00AE9299 /* showAnswerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD448D021EAFD75B00AE9299 /* showAnswerInterfaceController.m */; };
 		AD67000C1EAC58550096303E /* ViewerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000B1EAC58550096303E /* ViewerInterfaceController.m */; };
 		AD6700101EAC60040096303E /* tableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67000F1EAC60040096303E /* tableRow.m */; };
 		ADEE285D1EA842CD00748A04 /* InputSelectionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */; };
@@ -108,6 +111,10 @@
 		AD24F1BC1EAC0132007627BE /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 		AD24F1BE1EAC01C6007627BE /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		AD302E2A1EAD8AFD00FD6B8F /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
+		AD302E2D1EAE496400FD6B8F /* FREQDATA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FREQDATA.xcdatamodel; sourceTree = "<group>"; };
+		AD302E2F1EAE498700FD6B8F /* ModelMAPPING.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = ModelMAPPING.xcmappingmodel; sourceTree = "<group>"; };
+		AD448D011EAFD75B00AE9299 /* showAnswerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showAnswerInterfaceController.h; sourceTree = "<group>"; };
+		AD448D021EAFD75B00AE9299 /* showAnswerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showAnswerInterfaceController.m; sourceTree = "<group>"; };
 		AD67000A1EAC58550096303E /* ViewerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerInterfaceController.h; sourceTree = "<group>"; };
 		AD67000B1EAC58550096303E /* ViewerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewerInterfaceController.m; sourceTree = "<group>"; };
 		AD67000E1EAC60040096303E /* tableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableRow.h; sourceTree = "<group>"; };
@@ -222,6 +229,9 @@
 				AD24F1BE1EAC01C6007627BE /* Data.h */,
 				AD24F1BB1EAC0132007627BE /* Answer.h */,
 				AD24F1BC1EAC0132007627BE /* Answer.m */,
+				ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */,
+				AD302E2C1EAE496400FD6B8F /* FREQDATA.xcdatamodeld */,
+				AD302E2F1EAE498700FD6B8F /* ModelMAPPING.xcmappingmodel */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -333,12 +343,14 @@
 				AD24F1BA1EAC0105007627BE /* Data */,
 				ADEFB0441EA2C2F100A4D473 /* InterfaceController.h */,
 				ADEFB0451EA2C2F100A4D473 /* InterfaceController.m */,
+				ADEFB0C71EA82F2400A4D473 /* UserChoiceController.h */,
+				ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */,
 				ADEE285B1EA842CD00748A04 /* InputSelectionInterfaceController.h */,
+				AD448D011EAFD75B00AE9299 /* showAnswerInterfaceController.h */,
+				AD448D021EAFD75B00AE9299 /* showAnswerInterfaceController.m */,
 				ADEE285C1EA842CD00748A04 /* InputSelectionInterfaceController.m */,
 				ADEFB0C41EA80C3600A4D473 /* StartInterfaceController.h */,
 				ADEFB0C51EA80C3600A4D473 /* StartInterfaceController.m */,
-				ADEFB0C71EA82F2400A4D473 /* UserChoiceController.h */,
-				ADEFB0C81EA82F2400A4D473 /* UserChoiceController.m */,
 				ADEFB0471EA2C2F100A4D473 /* ExtensionDelegate.h */,
 				ADEFB0481EA2C2F100A4D473 /* ExtensionDelegate.m */,
 				ADEFB08E1EA70C3100A4D473 /* AAUserActivity.h */,
@@ -347,7 +359,6 @@
 				ADEFB0991EA7C40600A4D473 /* StaticticsInterfaceController.m */,
 				ADEFB04A1EA2C2F100A4D473 /* NotificationController.h */,
 				ADEFB04B1EA2C2F100A4D473 /* NotificationController.m */,
-				ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */,
 				ADEFB04D1EA2C2F100A4D473 /* Assets.xcassets */,
 				ADEFB04F1EA2C2F100A4D473 /* Info.plist */,
 				ADEFB0421EA2C2F100A4D473 /* Supporting Files */,
@@ -603,7 +614,9 @@
 				ADEFB0491EA2C2F100A4D473 /* ExtensionDelegate.m in Sources */,
 				ADEFB0901EA70C3100A4D473 /* AAUserActivity.m in Sources */,
 				ADEFB0931EA710D900A4D473 /* UserActivity.xcdatamodeld in Sources */,
+				AD448D031EAFD75B00AE9299 /* showAnswerInterfaceController.m in Sources */,
 				AD67000C1EAC58550096303E /* ViewerInterfaceController.m in Sources */,
+				AD302E2E1EAE496400FD6B8F /* FREQDATA.xcdatamodeld in Sources */,
 				ADEFB0C61EA80C3600A4D473 /* StartInterfaceController.m in Sources */,
 				ADEFB0A11EA7DC8200A4D473 /* TimerInterfaceController.m in Sources */,
 				ADEFB0461EA2C2F100A4D473 /* InterfaceController.m in Sources */,
@@ -613,6 +626,7 @@
 				ADEFB0C91EA82F2400A4D473 /* UserChoiceController.m in Sources */,
 				AD6700101EAC60040096303E /* tableRow.m in Sources */,
 				ADEFB04C1EA2C2F100A4D473 /* NotificationController.m in Sources */,
+				AD302E301EAE498700FD6B8F /* ModelMAPPING.xcmappingmodel in Sources */,
 				ADEFB0961EA7AECD00A4D473 /* TestPickerInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -969,6 +983,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		AD302E2C1EAE496400FD6B8F /* FREQDATA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD302E2D1EAE496400FD6B8F /* FREQDATA.xcdatamodel */,
+			);
+			currentVersion = AD302E2D1EAE496400FD6B8F /* FREQDATA.xcdatamodel */;
+			path = FREQDATA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		ADEFB0911EA710D900A4D473 /* UserActivity.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

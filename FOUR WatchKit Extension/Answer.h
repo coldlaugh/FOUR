@@ -14,5 +14,6 @@
 @property int16_t preptest;
 @property int16_t question;
 @property int16_t section;
+@property NSDate* time;
 
 @end

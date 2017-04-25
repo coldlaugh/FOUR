@@ -14,7 +14,7 @@
             <objects>
                 <controller title="Menu" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" animationDuration="1" layout="vertical" id="id3-3x-ICX">
+                        <group width="1" height="1" alignment="left" animationDuration="2" layout="vertical" id="id3-3x-ICX">
                             <items>
                                 <group width="1" height="0.5" alignment="left" id="pY0-6V-Rw6">
                                     <items>
@@ -24,7 +24,7 @@
                                                 <segue destination="CY4-Zl-u37" kind="push" id="ahI-Kt-exD"/>
                                             </connections>
                                         </button>
-                                        <button width="0.5" height="1" alignment="left" title="Setup Answer" id="3Pv-Sr-GCm">
+                                        <button width="0.5" height="1" alignment="left" title="Input Answer" id="3Pv-Sr-GCm">
                                             <color key="backgroundColor" red="0.33829289674758911" green="0.31385087966918945" blue="0.8442198634147644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="ZTi-0F-Llp" kind="push" identifier="AddAnswer" id="QyT-tT-pFV"/>
@@ -40,7 +40,7 @@
                                                 <segue destination="ZTi-0F-Llp" kind="push" identifier="Learn" id="SqL-IM-WbH"/>
                                             </connections>
                                         </button>
-                                        <button width="0.5" height="1" alignment="left" title="Goals" id="Myq-Ol-yPR">
+                                        <button width="0.5" height="1" alignment="left" title="View Answer" id="Myq-Ol-yPR">
                                             <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="K7A-Gp-hcf" kind="push" id="qaW-7E-oON"/>
@@ -102,6 +102,23 @@
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="-63" y="1790"/>
+        </scene>
+        <!--True answer-->
+        <scene sceneID="PwN-Ld-BL3">
+            <objects>
+                <controller title="True answer" id="QkQ-Kj-hMW" customClass="showAnswerInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="^?^" textAlignment="center" id="WuD-l8-i98">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="118"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="answerLabel" destination="WuD-l8-i98" id="LZX-TA-DE9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="485" y="795"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="lOH-2X-s80">
@@ -182,7 +199,7 @@
             <objects>
                 <controller title="Start" id="CY4-Zl-u37" customClass="StartInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" animationDuration="1" layout="vertical" radius="20" id="9MF-Nj-GMx">
+                        <group width="1" height="1" alignment="left" animationDuration="2" layout="vertical" radius="20" id="9MF-Nj-GMx">
                             <items>
                                 <group width="1" height="0.5" alignment="left" id="d5J-8Z-HuY">
                                     <items>
@@ -286,7 +303,7 @@
             <objects>
                 <controller title="Input your answer" id="ZTi-0F-Llp" customClass="InputSelectionInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" id="bs4-en-bp6">
+                        <group width="1" height="1" alignment="left" animationDuration="2" id="bs4-en-bp6">
                             <items>
                                 <group width="0.69999999999999996" height="1" alignment="right" layout="vertical" id="rGC-Mb-Wnb">
                                     <items>
@@ -298,12 +315,13 @@
                                         </group>
                                         <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="select prep" id="CVc-wV-rah">
                                             <connections>
-                                                <segue destination="oaH-pG-yKb" kind="modal" id="RYX-uo-jFw"/>
+                                                <action selector="selectPrep" destination="ZTi-0F-Llp" id="sX9-tr-ad7"/>
+                                                <segue destination="oaH-pG-yKb" kind="modal" identifier="TestPicker" id="RYX-uo-jFw"/>
                                             </connections>
                                         </button>
                                         <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Next Sec" id="Os9-z2-rA2">
                                             <connections>
-                                                <action selector="selectNexrSection" destination="ZTi-0F-Llp" id="96e-gM-Yqh"/>
+                                                <action selector="selectNextSection" destination="ZTi-0F-Llp" id="oUP-2Z-kHo"/>
                                             </connections>
                                         </button>
                                         <button width="0.80000000000000004" alignment="center" verticalAlignment="center" title="Undo" id="Onb-qF-vzB">
@@ -322,14 +340,19 @@
                                             </connections>
                                         </button>
                                         <timer alignment="right" verticalAlignment="bottom" previewedSeconds="353" id="BXU-dg-grg"/>
-                                        <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="Show" id="UAg-pB-6Il"/>
-                                        <group width="0.80000000000000004" alignment="center" hidden="YES" id="VTW-KA-42g">
+                                        <button width="0.80000000000000004" alignment="center" verticalAlignment="bottom" hidden="YES" title="Show Answer" id="UAg-pB-6Il">
+                                            <connections>
+                                                <segue destination="QkQ-Kj-hMW" kind="modal" identifier="ShowAnswer" id="ijM-W5-2Ty"/>
+                                            </connections>
+                                        </button>
+                                        <group width="74" alignment="center" hidden="YES" animationDuration="1" id="VTW-KA-42g">
                                             <items>
-                                                <imageView width="0.34999999999999998" height="1" alignment="left" image="checkMark" contentMode="scaleAspectFit" id="Rot-9f-dwN"/>
-                                                <label alignment="center" text="5" id="iQ0-Tn-4Tg" userLabel="5">
+                                                <label alignment="center" text="0 +" id="a9Q-yu-7d3">
                                                     <color key="textColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                                 </label>
-                                                <label alignment="center" verticalAlignment="center" text="/14" id="vl0-8b-Rh4" userLabel="/14"/>
+                                                <label alignment="center" text="0" id="iQ0-Tn-4Tg" userLabel="5"/>
+                                                <label alignment="center" verticalAlignment="center" text=" / 0" id="vl0-8b-Rh4" userLabel="/14"/>
                                             </items>
                                         </group>
                                     </items>
@@ -377,13 +400,18 @@
                         <outlet property="answerButtonC" destination="9jB-Wn-p9W" id="ai5-Gj-3L8"/>
                         <outlet property="answerButtonD" destination="a9H-DX-Ygy" id="MbH-d1-hx4"/>
                         <outlet property="answerButtonE" destination="gyU-Ic-D48" id="Fg1-tm-kdU"/>
+                        <outlet property="correctCountLabel" destination="iQ0-Tn-4Tg" id="WYb-GO-sAc"/>
+                        <outlet property="learnLabel" destination="a9Q-yu-7d3" id="N7P-cb-Fql"/>
                         <outlet property="nextSectionButton" destination="Os9-z2-rA2" id="BIK-cf-kVi"/>
                         <outlet property="pauseButton" destination="z0a-p1-Vg5" id="j3h-fC-Wai"/>
                         <outlet property="quesNumLabel" destination="qx9-9a-9Yg" id="7iV-Zh-yxc"/>
                         <outlet property="secNumLabel" destination="W9f-rV-xnD" id="X8z-37-H5d"/>
                         <outlet property="selectPrepButton" destination="CVc-wV-rah" id="CMb-NG-4e7"/>
+                        <outlet property="showButton" destination="UAg-pB-6Il" id="TwP-8Y-Gr8"/>
                         <outlet property="startButton" destination="0mN-Tb-4hO" id="fm0-SS-52W"/>
+                        <outlet property="statGroup" destination="VTW-KA-42g" id="7Rb-Hw-UVN"/>
                         <outlet property="timer" destination="BXU-dg-grg" id="tPP-rf-BDS"/>
+                        <outlet property="totalCountLabel" destination="vl0-8b-Rh4" id="bCS-5W-mYi"/>
                         <outlet property="undoButton" destination="Onb-qF-vzB" id="fur-Fy-1wh"/>
                     </connections>
                 </controller>

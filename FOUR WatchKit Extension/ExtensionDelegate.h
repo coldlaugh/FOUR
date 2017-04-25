@@ -16,7 +16,7 @@
 
 @property (strong, nonatomic) UserChoiceController* userChoice;
 
-@property(class, readonly, strong) NSRunLoop *currentRunLoop;
+//@property(class, readonly, strong) NSRunLoop *currentRunLoop;
 
 - (void) saveChanges;
 
